@@ -18,9 +18,113 @@ if( class_exists( 'CSF' ) ) {
     CSF::createSection( $prefix, array(
         'id'    => 'logo', // Set a unique slug-like ID
         'title' => 'Logo',
+        'fields' => array(
+            array(
+                'id'      => 'opt-media-logo',
+                'type'    => 'media',
+                'title'   => 'Logo',
+                'library' => 'image',
+                'preview_size' => 'full'
+            ),
+
+        )
     ) );
 /*======================End Logo=============================*/
-  /*================Footer Options================*/
+
+    /**======================Banner*======================*/
+    CSF::createSection( $prefix, array(
+        'id'    => 'banner', // Set a unique slug-like ID
+        'title' => 'Banner',
+        'fields' => array(
+            array(
+                'id'        => 'opt-group-banner',
+                'type'      => 'group',
+                'title'     => 'Group Banner',
+                'fields'    => array(
+                    array(
+                        'id'    => 'opt-group-banner-head',
+                        'type'  => 'text',
+                        'title' => 'Head',
+                    ),
+                    array(
+                        'id'    => 'opt-group-banner-subhead',
+                        'type'  => 'text',
+                        'title' => 'Sub Head',
+                    ),
+                    array(
+                        'id'    => 'opt-group-banner-link',
+                        'type'  => 'text',
+                        'title' => 'Link Product',
+                    ),
+                    array(
+                        'id'      => 'opt-group-banner-logo',
+                        'type'    => 'media',
+                        'title'   => 'Logo',
+                        'library' => 'image',
+                        'preview_size' => 'full'
+                    ),
+                ),
+            ),
+
+        )
+    ) );
+    /**======================End Banner*======================*/
+
+   /**==============================h1 heading==============================*/
+    CSF::createSection( $prefix, array(
+        'id'    => 'home-heading', // Set a unique slug-like ID
+        'title' => 'Home Giới thiệu',
+        'fields' => array(
+            array(
+                'id'      => 'opt-h1-head',
+                'type'    => 'text',
+                'title'   => 'Tiêu đề',
+            ),
+            array(
+                'id'      => 'opt-h1-desc',
+                'type'    => 'wp_editor',
+                'title'   => 'Mô tả',
+                'tinymce'       => true,
+            ),
+        )
+    ) );
+    /**==============================end h1 heading==============================*/
+
+    /**==============================Thiết kế nội thất==============================*/
+    CSF::createSection( $prefix, array(
+        'id'    => 'home-design', // Set a unique slug-like ID
+        'title' => 'Home Thiết Nế Nội Thất',
+        'fields' => array(
+            array(
+                'id'    => 'home-design-title',
+                'type'  => 'text',
+                'title' => 'Tiêu đề',
+            ),
+            array(
+                'id'        => 'home-design-group',
+                'type'      => 'group',
+                'title'     => 'Dự án',
+                'fields'    => array(
+                    array(
+                        'id'    => 'home-design-name-project',
+                        'type'  => 'text',
+                        'title' => 'Tên Dự án',
+                    ),
+                    array(
+                        'id'          => 'home-design-group-select',
+                        'type'        => 'select',
+                        'title'       => 'Chọn một danh mục',
+                        'placeholder' => 'Chọn một danh mục',
+                        'options'     => 'categories',
+                    ),
+
+                ),
+            ),
+        )
+    ) );
+    /**==============================end Thiết kế nội thất==============================*/
+
+    /*================Footer Options================*/
   // Create a top-tab
   CSF::createSection( $prefix, array(
     'id'    => 'footer_tab', // Set a unique slug-like ID
@@ -205,30 +309,5 @@ if( class_exists( 'CSF' ) ) {
   ) );
 
   /*================End Footer Options================*/
-
-  //
-  // Create a top-tab
-  CSF::createSection( $prefix, array(
-    'id'    => 'secondry_tab', // Set a unique slug-like ID
-    'title' => 'Secondry Tab',
-  ) );
-
-
-  //
-  // Create a sub-tab
-  CSF::createSection( $prefix, array(
-    'parent' => 'secondry_tab', // The slug id of the parent section
-    'title'  => 'Sub Tab 1',
-    'fields' => array(
-
-      // A switcher field
-      array(
-        'id'    => 'opt-switcher',
-        'type'  => 'switcher',
-        'title' => 'Simple Switcher',
-      ),
-
-    )
-  ) );
 
 }

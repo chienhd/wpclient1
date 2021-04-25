@@ -30,7 +30,7 @@
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <a class="navbar-brand custom-logo-link" href="/">
-                        <img src="/wp-content/themes/client/assets/images/logo/img.png" alt="">
+                        <img src="<?php echo prefix_get_option('opt-media-logo')['url'] ?>" alt="Logo">
                     </a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar-collapse" aria-expanded="false">
                         <span class="icon-bar"></span>
