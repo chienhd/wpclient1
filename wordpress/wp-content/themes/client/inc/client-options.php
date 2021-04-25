@@ -13,7 +13,13 @@ if( class_exists( 'CSF' ) ) {
     'menu_title' => 'Theme Options',
     'menu_slug'  => 'my-framework',
   ) );
-
+/*======================Logo=============================*/
+    // Create a top-tab
+    CSF::createSection( $prefix, array(
+        'id'    => 'logo', // Set a unique slug-like ID
+        'title' => 'Logo',
+    ) );
+/*======================End Logo=============================*/
   /*================Footer Options================*/
   // Create a top-tab
   CSF::createSection( $prefix, array(
@@ -75,6 +81,26 @@ if( class_exists( 'CSF' ) ) {
       <p>Hotline : 098 10 888 66</p>
       <p>Email : ahome8866@gmail.com</p>
       <p>Website : <a href="https://noithatahome.vn">noithatahome.vn</a></p>
+      <div class="social">
+        <a href="https://www.facebook.com/ahome8866/">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-google-plus" aria-hidden="true"></i>
+        </a>
+        <a href="https://plus.google.com/u/0/105582762864756550248">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCSyZd433RzC_ueCdsAxHf2g">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- dmca !-->
+      <a href="//www.dmca.com/Protection/Status.aspx?ID=7bf91cdc-d573-4b4b-bca9-1d100a23314a&amp;refurl=https://noithatahome.vn/" title="DMCA.com Protection Status" class="dmca-badge"> <img src="https://images.dmca.com/Badges/_dmca_premi_badge_4.png?ID=7bf91cdc-d573-4b4b-bca9-1d100a23314a" alt="DMCA.com Protection Status"></a>
+      <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+
+      <!-- end dmca !-->
    </div>
 </div>',
     ),
@@ -105,26 +131,17 @@ if( class_exists( 'CSF' ) ) {
          <li><a href="https://noithatahome.vn/thi-cong-noi-that/">Thi công nội thất</a></li>
          <li><a href="https://noithatahome.vn/showroom-noi-that-ahome/">Nội thất cao cấp</a></li>
       </ul>
-      <div class="social">
-        <a href="https://www.facebook.com/ahome8866/">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a href="#">
-          <i class="fa fa-google-plus" aria-hidden="true"></i>
-        </a>
-        <a href="https://plus.google.com/u/0/105582762864756550248">
-          <i class="fa fa-youtube" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCSyZd433RzC_ueCdsAxHf2g">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-      </div>
-
-      <!-- dmca !-->
-      <a href="//www.dmca.com/Protection/Status.aspx?ID=7bf91cdc-d573-4b4b-bca9-1d100a23314a&amp;refurl=https://noithatahome.vn/" title="DMCA.com Protection Status" class="dmca-badge"> <img src="https://images.dmca.com/Badges/_dmca_premi_badge_4.png?ID=7bf91cdc-d573-4b4b-bca9-1d100a23314a" alt="DMCA.com Protection Status"></a>
-      <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
-
-      <!-- end dmca !-->
+      
+   </div>
+</div>
+<div class="widget footer_widget_newspapers">
+   <div class="textwidget">
+      <ul>
+         <li><a href="http://dantri.com.vn/nha-dep/noi-that-ahome-ra-mat-bo-suu-tap-phong-cach-y-20180614093844195.htm"><img src="https://noithatahome.vn/wp-content/uploads/dt.png"></a></li>
+         <li><a href="#"><img src="https://noithatahome.vn/wp-content/uploads/h1.png"></a></li>
+         <li><a href="https://vnexpress.net/ben-trong-biet-thu-230m2-o-ha-noi-4011897.html"><img src="https://noithatahome.vn/wp-content/uploads/vn.png"></a></li>
+         <li><a href="https://vtv.vn/video/khong-gian-xanh-kien-truc-su-luu-phuc-loc-to-am-gan-ket-yeu-thuong-424808.htm"><img src="https://noithatahome.vn/wp-content/uploads/vtv.png"></a></li>
+      </ul>
    </div>
 </div>'
     ),
@@ -154,16 +171,6 @@ if( class_exists( 'CSF' ) ) {
          <li><a href="https://noithatahome.vn/chinh-sach-bao-mat-thong-tin-cua-ahome/">Chính sách bảo mật thông tin</a></li>
          <li><a href="https://noithatahome.vn/chinh-sach-va-quy-dinh-ve-dich-vu-cua-ahome/">Chính sách và quy định</a></li>
          <li><a href="https://noithatahome.vn/map-chi-duong-den-showroom-noi-that/">Sơ đồ chỉ đường</a></li>
-      </ul>
-   </div>
-</div>
-<div class="widget footer_widget_newspapers">
-   <div class="textwidget">
-      <ul>
-         <li><a href="http://dantri.com.vn/nha-dep/noi-that-ahome-ra-mat-bo-suu-tap-phong-cach-y-20180614093844195.htm"><img src="https://noithatahome.vn/wp-content/uploads/dt.png"></a></li>
-         <li><a href="#"><img src="https://noithatahome.vn/wp-content/uploads/h1.png"></a></li>
-         <li><a href="https://vnexpress.net/ben-trong-biet-thu-230m2-o-ha-noi-4011897.html"><img src="https://noithatahome.vn/wp-content/uploads/vn.png"></a></li>
-         <li><a href="https://vtv.vn/video/khong-gian-xanh-kien-truc-su-luu-phuc-loc-to-am-gan-ket-yeu-thuong-424808.htm"><img src="https://noithatahome.vn/wp-content/uploads/vtv.png"></a></li>
       </ul>
    </div>
 </div>'

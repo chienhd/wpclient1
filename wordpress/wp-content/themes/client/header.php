@@ -22,6 +22,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<div id="top"></div>
 <div id="page-wrap">
     <header id="masthead" class="site-header">
         <nav class="navbar navbar-default site-header_navbar">

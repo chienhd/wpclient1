@@ -98,3 +98,15 @@ $('.kts-right-item').mouseover(function() {
     $('.kts-left-item' + i).addClass('kts-left-item-show');
 
 });
+
+$('.back-to-top').on('click', function(e){
+    $("html, body").animate({scrollTop: $("#top").offset().top}, 500);
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 350) {
+        $('.back-to-top').fadeIn();
+    } else {
+        $('.back-to-top').fadeOut();
+    }
+});
