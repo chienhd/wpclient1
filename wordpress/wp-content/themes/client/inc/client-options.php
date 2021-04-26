@@ -1,154 +1,218 @@
 <?php
 
 // Control core classes for avoid errors
-if( class_exists( 'CSF' ) ) {
+if (class_exists('CSF')) {
 
-  //
-  // Set a unique slug-like ID
-  $prefix = 'my_framework';
+    //
+    // Set a unique slug-like ID
+    $prefix = 'my_framework';
 
-  //
-  // Create options
-  CSF::createOptions( $prefix, array(
-    'menu_title' => 'Theme Options',
-    'menu_slug'  => 'my-framework',
-  ) );
-/*======================Logo=============================*/
+    //
+    // Create options
+    CSF::createOptions($prefix, array(
+        'menu_title' => 'Theme Options',
+        'menu_slug' => 'my-framework',
+    ));
+    /*&======================Logo=============================*/
     // Create a top-tab
-    CSF::createSection( $prefix, array(
-        'id'    => 'logo', // Set a unique slug-like ID
+    CSF::createSection($prefix, array(
+        'id' => 'logo', // Set a unique slug-like ID
         'title' => 'Logo',
         'fields' => array(
             array(
-                'id'      => 'opt-media-logo',
-                'type'    => 'media',
-                'title'   => 'Logo',
+                'id' => 'opt-media-logo',
+                'type' => 'media',
+                'title' => 'Logo',
                 'library' => 'image',
                 'preview_size' => 'full'
             ),
 
         )
-    ) );
-/*======================End Logo=============================*/
+    ));
+    /**======================End Logo=============================*/
 
     /**======================Banner*======================*/
-    CSF::createSection( $prefix, array(
-        'id'    => 'banner', // Set a unique slug-like ID
+    CSF::createSection($prefix, array(
+        'id' => 'banner', // Set a unique slug-like ID
         'title' => 'Banner',
         'fields' => array(
             array(
-                'id'        => 'opt-group-banner',
-                'type'      => 'group',
-                'title'     => 'Group Banner',
-                'fields'    => array(
+                'id' => 'opt-group-banner',
+                'type' => 'group',
+                'title' => 'Group Banner',
+                'fields' => array(
                     array(
-                        'id'    => 'opt-group-banner-head',
-                        'type'  => 'text',
+                        'id' => 'opt-group-banner-head',
+                        'type' => 'text',
                         'title' => 'Head',
                     ),
                     array(
-                        'id'    => 'opt-group-banner-subhead',
-                        'type'  => 'text',
+                        'id' => 'opt-group-banner-subhead',
+                        'type' => 'text',
                         'title' => 'Sub Head',
                     ),
                     array(
-                        'id'    => 'opt-group-banner-link',
-                        'type'  => 'text',
+                        'id' => 'opt-group-banner-link',
+                        'type' => 'text',
                         'title' => 'Link Product',
                     ),
                     array(
-                        'id'      => 'opt-group-banner-logo',
-                        'type'    => 'media',
-                        'title'   => 'Logo',
+                        'id' => 'opt-group-banner-logo',
+                        'type' => 'media',
+                        'title' => 'Logo',
                         'library' => 'image',
                         'preview_size' => 'full'
                     ),
                 ),
             ),
-
         )
-    ) );
+    ));
     /**======================End Banner*======================*/
 
-   /**==============================h1 heading==============================*/
-    CSF::createSection( $prefix, array(
-        'id'    => 'home-heading', // Set a unique slug-like ID
+    /**==============================h1 heading==============================*/
+    CSF::createSection($prefix, array(
+        'id' => 'home-heading', // Set a unique slug-like ID
         'title' => 'Home Giới thiệu',
         'fields' => array(
             array(
-                'id'      => 'opt-h1-head',
-                'type'    => 'text',
-                'title'   => 'Tiêu đề',
-            ),
-            array(
-                'id'      => 'opt-h1-desc',
-                'type'    => 'wp_editor',
-                'title'   => 'Mô tả',
-                'tinymce'       => true,
-            ),
-        )
-    ) );
-    /**==============================end h1 heading==============================*/
-
-    /**==============================Thiết kế nội thất==============================*/
-    CSF::createSection( $prefix, array(
-        'id'    => 'home-design', // Set a unique slug-like ID
-        'title' => 'Home Thiết Nế Nội Thất',
-        'fields' => array(
-            array(
-                'id'    => 'home-design-title',
-                'type'  => 'text',
+                'id' => 'opt-h1-head',
+                'type' => 'text',
                 'title' => 'Tiêu đề',
             ),
             array(
-                'id'        => 'home-design-group',
-                'type'      => 'group',
-                'title'     => 'Dự án',
-                'fields'    => array(
+                'id' => 'opt-h1-desc',
+                'type' => 'wp_editor',
+                'title' => 'Mô tả',
+                'tinymce' => true,
+            ),
+        )
+    ));
+    /**==============================end h1 heading==============================*/
+
+    /**==============================Thiết kế nội thất==============================*/
+    CSF::createSection($prefix, array(
+        'id' => 'home-design', // Set a unique slug-like ID
+        'title' => 'Home Thiết Nế Nội Thất',
+        'fields' => array(
+            array(
+                'id' => 'home-design-title',
+                'type' => 'text',
+                'title' => 'Tiêu đề',
+            ),
+            array(
+                'id' => 'home-design-group',
+                'type' => 'group',
+                'title' => 'Dự án',
+                'fields' => array(
                     array(
-                        'id'    => 'home-design-name-project',
-                        'type'  => 'text',
+                        'id' => 'home-design-name-project',
+                        'type' => 'text',
                         'title' => 'Tên Dự án',
                     ),
                     array(
-                        'id'          => 'home-design-group-select',
-                        'type'        => 'select',
-                        'title'       => 'Chọn một danh mục',
+                        'id' => 'home-design-group-select',
+                        'type' => 'select',
+                        'title' => 'Chọn một danh mục',
                         'placeholder' => 'Chọn một danh mục',
-                        'options'     => 'categories',
+                        'options' => 'categories',
                     ),
 
                 ),
             ),
         )
-    ) );
+    ));
     /**==============================end Thiết kế nội thất==============================*/
 
-    /*================Footer Options================*/
-  // Create a top-tab
-  CSF::createSection( $prefix, array(
-    'id'    => 'footer_tab', // Set a unique slug-like ID
-    'title' => 'Footer',
-  ) );
+    /**======================== Dự án đã hoàn thành =================================*/
+    CSF::createSection($prefix, array(
+        'id' => 'home-project-finished', // Set a unique slug-like ID
+        'title' => 'Home Dự án đã hoàn thành',
+        'fields' => array(
+            array(
+                'id' => 'home-project-finished-1',
+                'type' => 'text',
+                'title' => 'Tiêu đề',
+            ),
+            array(
+                'id' => 'home-project-finished-2',
+                'type' => 'select',
+                'title' => 'Chọn một danh mục',
+                'placeholder' => 'Chọn một danh mục',
+                'options' => 'categories',
+            )
+        )
+    ));
+    /**======================== end Dự án đã hoàn thành =================================*/
 
-  //
-  // Create a sub-tab
-  CSF::createSection( $prefix, array(
-    'parent' => 'footer_tab', // The slug id of the parent section
-    'title'  => 'Footer Block 1',
+    /**======================== chon chúng tôi ========================*/
+    CSF::createSection($prefix, array(
+        'id' => 'home-choose-us', // Set a unique slug-like ID
+        'title' => 'Home Lựa chọn chúng tôi',
+        'fields' => array(
+            array(
+                'id' => 'home-choose-us-1',
+                'type' => 'text',
+                'title' => 'Tiêu đề',
+            ),
+            array(
+                'id'            => 'home-choose-us-2',
+                'type'          => 'wp_editor',
+                'title'         => 'Mô tả ngắn',
+                'tinymce'       => true,
+                'quicktags'     => true,
+                'media_buttons' => true,
+                'height'        => '100px',
+            ),
+            array(
+                'id' => 'home-choose-us-group',
+                'type' => 'group',
+                'title' => 'Mô tả các block',
+                'fields' => array(
+                    array(
+                        'id' => 'image',
+                        'type' => 'media',
+                        'title' => 'Icon',
+                        'library' => 'image',
+                        'preview_size' => 'full',
+                        'url' => false
+                    ),
+                    array(
+                        'id'            => 'content',
+                        'type'          => 'wp_editor',
+                        'title'         => 'Nội dung block',
+                        'tinymce'       => true,
+                        'quicktags'     => true,
+                        'media_buttons' => true,
+                        'height'        => '100px',
+                    ),
+                ),
+            ),
+        )
+    ));
+    /**======================== end chon chúng tôi ========================*/
+    /**================Footer Options================*/
+    // Create a top-tab
+    CSF::createSection($prefix, array(
+        'id' => 'footer_tab', // Set a unique slug-like ID
+        'title' => 'Footer',
+    ));
+    // Create a sub-tab
+    CSF::createSection($prefix, array(
+        'parent' => 'footer_tab', // The slug id of the parent section
+        'title' => 'Footer Block 1',
 
-    'fields' => array(
+        'fields' => array(
 
-      // Footer block 1
-      array(
-        'id'       => 'footer_tab_block_1',
-        'type'     => 'code_editor',
-        'title'    => 'HTML Editor 1',
-        'settings' => array(
-          'theme'  => 'shadowfox',
-          'mode'   => 'htmlmixed',
-        ),
-        'default'  => '<div class="widget footer_widget_name">
+            // Footer block 1
+            array(
+                'id' => 'footer_tab_block_1',
+                'type' => 'code_editor',
+                'title' => 'HTML Editor 1',
+                'settings' => array(
+                    'theme' => 'shadowfox',
+                    'mode' => 'htmlmixed',
+                ),
+                'default' => '<div class="widget footer_widget_name">
    <h4 class="footer_widget_title">CÔNG TY CỔ PHẦN KIẾN TRÚC<br>
       NỘI THẤT AHOME
    </h4>
@@ -158,28 +222,26 @@ if( class_exists( 'CSF' ) ) {
    <p>Có vị trí đỗ xe ô tô</p>
    <p><a href="https://www.google.com/maps/place/Thi%E1%BA%BFt+k%E1%BA%BF+n%E1%BB%99i+th%E1%BA%A5t+Ahome/@21.035396,105.806627,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab6912cd1d81:0xbf798b44563bc91b!8m2!3d21.035396!4d105.8088157?hl=vi-VN"><img class="size-full wp-image-98 alignleft" src="https://noithatahome.vn/wp-content/uploads/2018/04/icon-map.png" alt="" width="32" height="31"> Bản đồ chỉ dẫn </a></p>
 </div>'
-      ),
+            ),
 
-    )
-  ) );
+        )
+    ));
+    // Footer block 2
+    CSF::createSection($prefix, array(
+        'parent' => 'footer_tab',
+        'title' => 'Footer Block 2',
+        'fields' => array(
 
-
-  // Footer block 2
-  CSF::createSection( $prefix, array(
-    'parent' => 'footer_tab',
-    'title'  => 'Footer Block 2',
-    'fields' => array(
-
-      // HTML Editor
-     array(
-      'id'       => 'footer_tab_block_2',
-      'type'     => 'code_editor',
-      'title'    => 'HTML Editor 2',
-      'settings' => array(
-        'theme'  => 'shadowfox',
-        'mode'   => 'htmlmixed',
-      ),
-      'default'  => '<div class="widget footer_widget_contact">
+            // HTML Editor
+            array(
+                'id' => 'footer_tab_block_2',
+                'type' => 'code_editor',
+                'title' => 'HTML Editor 2',
+                'settings' => array(
+                    'theme' => 'shadowfox',
+                    'mode' => 'htmlmixed',
+                ),
+                'default' => '<div class="widget footer_widget_contact">
    <h4 class="footer_widget_title">THÔNG TIN LIÊN HỆ</h4>
    <div class="textwidget">
       <p>Hotline : 098 10 888 66</p>
@@ -207,27 +269,26 @@ if( class_exists( 'CSF' ) ) {
       <!-- end dmca !-->
    </div>
 </div>',
-    ),
+            ),
 
-   )
-  ) );
+        )
+    ));
+    // HTML Editor
+    CSF::createSection($prefix, array(
+        'parent' => 'footer_tab',
+        'title' => 'Footer Block 3',
+        'fields' => array(
 
-     // HTML Editor
-  CSF::createSection( $prefix, array(
-    'parent' => 'footer_tab',
-    'title'  => 'Footer Block 3',
-    'fields' => array(
-
-      // A textarea field
-     array(
-      'id'       => 'footer_tab_block_3',
-      'type'     => 'code_editor',
-      'title'    => 'HTML Editor 3',
-      'settings' => array(
-        'theme'  => 'shadowfox',
-        'mode'   => 'htmlmixed',
-      ),
-      'default'  => '<div class="widget footer_widget_link">
+            // A textarea field
+            array(
+                'id' => 'footer_tab_block_3',
+                'type' => 'code_editor',
+                'title' => 'HTML Editor 3',
+                'settings' => array(
+                    'theme' => 'shadowfox',
+                    'mode' => 'htmlmixed',
+                ),
+                'default' => '<div class="widget footer_widget_link">
    <h4 class="footer_widget_title">Liên kết</h4>
    <div class="textwidget">
       <ul>
@@ -248,27 +309,26 @@ if( class_exists( 'CSF' ) ) {
       </ul>
    </div>
 </div>'
-    ),
+            ),
 
-   )
-  ) );
+        )
+    ));
+    // HTML Editor
+    CSF::createSection($prefix, array(
+        'parent' => 'footer_tab',
+        'title' => 'Footer Block 4',
+        'fields' => array(
 
-   // HTML Editor
-  CSF::createSection( $prefix, array(
-    'parent' => 'footer_tab',
-    'title'  => 'Footer Block 4',
-    'fields' => array(
-
-      // A textarea field
-     array(
-      'id'       => 'footer_tab_block_4',
-      'type'     => 'code_editor',
-      'title'    => 'HTML Editor 4',
-      'settings' => array(
-        'theme'  => 'shadowfox',
-        'mode'   => 'htmlmixed',
-      ),
-      'default'  => '<div class="widget footer_widget_support">
+            // A textarea field
+            array(
+                'id' => 'footer_tab_block_4',
+                'type' => 'code_editor',
+                'title' => 'HTML Editor 4',
+                'settings' => array(
+                    'theme' => 'shadowfox',
+                    'mode' => 'htmlmixed',
+                ),
+                'default' => '<div class="widget footer_widget_support">
    <h3 class="footer_widget_title">HỖ TRỢ KHÁCH HÀNG</h3>
    <div class="textwidget">
       <ul>
@@ -278,36 +338,34 @@ if( class_exists( 'CSF' ) ) {
       </ul>
    </div>
 </div>'
-    ),
+            ),
 
-   )
-  ) );
+        )
+    ));
+    // HTML Editor
+    CSF::createSection($prefix, array(
+        'parent' => 'footer_tab',
+        'title' => 'Footer Block 5',
+        'fields' => array(
 
-   // HTML Editor
-  CSF::createSection( $prefix, array(
-    'parent' => 'footer_tab',
-    'title'  => 'Footer Block 5',
-    'fields' => array(
+            // A textarea field
+            array(
+                'id' => 'footer_tab_block_5',
+                'type' => 'gallery',
+                'title' => 'Gallery',
+                'add_title' => 'Add Images',
+                'edit_title' => 'Edit Images',
+                'clear_title' => 'Remove Images',
+            ),
 
-      // A textarea field
-     array(
-      'id'          => 'footer_tab_block_5',
-      'type'        => 'gallery',
-      'title'       => 'Gallery',
-      'add_title'   => 'Add Images',
-      'edit_title'  => 'Edit Images',
-      'clear_title' => 'Remove Images',
-    ),
-
-     array(
-        'id'      => 'footer_tab_block_5_2',
-        'type'    => 'text',
-        'title'   => 'Copy Right',
-        'default' => '© 2018 - Nội thất Ahome'
-      ),
-   )
-  ) );
-
-  /*================End Footer Options================*/
+            array(
+                'id' => 'footer_tab_block_5_2',
+                'type' => 'text',
+                'title' => 'Copy Right',
+                'default' => '© 2018 - Nội thất Ahome'
+            ),
+        )
+    ));
+    /**================End Footer Options================*/
 
 }

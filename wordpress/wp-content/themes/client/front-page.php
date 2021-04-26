@@ -20,87 +20,10 @@ get_header();
             get_template_part('template-parts/home', 'heading');
             get_template_part('template-parts/home', 'design');
             get_template_part('template-parts/home', 'project-finished');
+            get_template_part('template-parts/home', 'choose-us');
         ?>
 
-        <!-- TẠI SAO CHỌN BYZAN? -->
-        <div class="home-info-title">
-            <div class="container">
-                <div class="vc_text_separator">
-                    <div class="separator_wrapper">
-                        <div class="separator_content"><h2>TẠI SAO CHỌN BYZAN?</h2></div>
-                    </div>
-                    <div class="separator_line"></div>
-                </div>
-            </div>
-        </div>
-        <!-- Home info text -->
-        <div class="home-info-text">
-            <div class="container">
-                <div class="row row--mod">
-                    <div class="col-md-10">
-                        <div class="home-info-text_content">
-                            <p>Trong một thị trường nội thất ngày càng sôi động và đa dạng như ở Việt Nam, Byzan luôn tự
-                                hào là đơn vị dẫn đầu và tạo ra xu hướng trong phong cách thiết kế Hiện Đại ( Theo tạp
-                                chí kiến trúc Việt Nam bình chọn ) các thiết kế của chúng tôi luôn hướng đến sự hài hoà
-                                giữa công năng sử dụng và thẩm mỹ, với ngôn ngữ thiết kế đồng nhất từ mảng khối cho đến
-                                màu sắc sao cho mỗi không gian sống luôn là đứa con tinh thần, là nơi mà bạn muốn trở về
-                                sau cuối ngày làm việc mệt mỏi.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="home-choose-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-v1-section hvr-grow">
-                            <div class="service-v1"><img alt="" class="icon-services"
-                                                         src="https://byzan.vn/wp-content/uploads/2019/01/100-NAM-KINH-NGHIEM.png"
-                                                         title="" height="auto" width="100%"></div>
-                            <h3 class="service-title">10 năm 1 phong cách</h3>
-                            <p class="is-mb-0">10 năm theo đuổi phong cách hiện đại, Byzan khẳng định vị thế dẫn đầu
-                                trong trường phái này. Với &gt; 400 căn hộ được thiết kế &amp; thi công nội thất trọn
-                                gói mỗi năm, chúng tôi là 1 trong những đơn vị uy tín hàng đầu miền Bắc.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-v1-section hvr-grow">
-                            <div class="service-v1"><img alt="" class="icon-service"
-                                                         src="https://byzan.vn/wp-content/uploads/2019/01/QUY-TRINH-CHAT-CHE.png"
-                                                         title="" height="auto" width="100%"></div>
-                            <h3 class="service-title">Quy Trình Chặt Chẽ</h3>
-                            <p class="is-mb-0"> Sỡ hữu Nhà máy sản xuất rộng trên 2000m2 cùng hệ thống kiểm soát chất
-                                lượng chặt chẽ từ khâu sản xuất đến dịch vụ, bạn có thể hoàn toàn yên tâm khi sử dụng
-                                dịch vụ thiết kế - thi công trọn gói của chúng tôi.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-v1-section hvr-grow">
-                            <div class="service-v1"><img alt="" class="icon-service"
-                                                         src="https://byzan.vn/wp-content/uploads/2019/01/icon-phong-thuy1.png"
-                                                         title="" height="auto" width="100%"></div>
-                            <h3 class="service-title">Đề Cao Phong Thủy</h3>
-                            <p class="is-mb-0">Phong thủy luôn là yếu tố được cân nhắc đầu tiên trong thiết kế nội thất
-                                hiện đại của Byzan, nhằm việc tạo không gian sống phù hợp với tuổi, mệnh của gia chủ,
-                                giúp hạn chế điềm xấu, tài vận sinh sôi.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-v1-section hvr-grow">
-                            <div class="service-v1"><img alt="" class="icon-service"
-                                                         src="https://byzan.vn/wp-content/uploads/2019/01/CAM-KET-TIEN-DO-123.png"
-                                                         title="" height="auto" width="100%"></div>
-                            <h3 class="service-title">Cam Kết Tiến Độ</h3>
-                            <p class="is-mb-0">Byzan là đơn vị duy nhất hiện nay cam kết nếu thời gian thi công căn hộ
-                                chậm tiến độ so với hợp đồng thi công thì sẽ chịu phạt tiến độ với mức phạt 1 triệu
-                                đồng/1 ngày.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <?php
         /**

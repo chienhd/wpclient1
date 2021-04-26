@@ -1,7 +1,7 @@
 <div id="home-kts-wrap">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12"> <h2 class="home-kts-title">ĐỘI NGŨ KIẾN TRÚC SƯ</h2></div>
+            <div class="col-lg-12 col-md-12 col-sm-12"><h2 class="home-kts-title">ĐỘI NGŨ KIẾN TRÚC SƯ</h2></div>
             <div class="col-lg-12 col-md-12 col-sm-12 home-kts-content">
                 <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 kts-left">
                     <div data-index="1" class="kts-left-item kts-left-item1 kts-left-item-show">
@@ -349,7 +349,9 @@
                     <ul>
                         <li data-index="1" class="kts-right-item kts-right-item1">
                             <a href="#">
-                                <img class="kts-right-item-img img-responsive" src="https://byzan.vn/wp-content/uploads/2020/09/kien-truc-su-byzan-hien-dai-5-835x1024.jpg" alt="kien-truc-su-byzan-hien-dai-5.jpg"> <span class="kts-right-item-name">Tạ Văn Hiếu</span>
+                                <img class="kts-right-item-img img-responsive"
+                                     src="https://byzan.vn/wp-content/uploads/2020/09/kien-truc-su-byzan-hien-dai-5-835x1024.jpg"
+                                     alt="kien-truc-su-byzan-hien-dai-5.jpg"> <span class="kts-right-item-name">Tạ Văn Hiếu</span>
                                 <span class="kts-right-item-des">
                            <p>- Tốt nghiệp Đại học Xây dựng Chuyên ngành Kiến trúc và Quy Hoạch và có 12 năm kinh nghiệm trong ngành Thiết kế Nội thất</p>
                         </span>
@@ -358,7 +360,9 @@
                         </li>
                         <li data-index="4" class="kts-right-item kts-right-item4">
                             <a href="#">
-                                <img class="kts-right-item-img img-responsive" src="https://byzan.vn/wp-content/uploads/2020/12/kien-truc-su-byzan-hien-dai-6.1-1024x1024.jpg" alt="kien-truc-su-byzan-hien-dai-6.1.jpg"> <span class="kts-right-item-name">Nguyễn Hồng Sơn</span>
+                                <img class="kts-right-item-img img-responsive"
+                                     src="https://byzan.vn/wp-content/uploads/2020/12/kien-truc-su-byzan-hien-dai-6.1-1024x1024.jpg"
+                                     alt="kien-truc-su-byzan-hien-dai-6.1.jpg"> <span class="kts-right-item-name">Nguyễn Hồng Sơn</span>
                                 <span class="kts-right-item-des">
                            <p>Tốt nghiệp Đại học Mỹ Thuật Công Nghiệp - chuyên ngành Thiết Kế Nội thất với 5 năm trong ngành Thiết kế Nội thất về lĩnh vực phong thủy và chuyên gia về kiến trúc nội thất Châu Âu.</p>
                         </span>
@@ -367,7 +371,9 @@
                         </li>
                         <li data-index="5" class="kts-right-item kts-right-item5">
                             <a href="#">
-                                <img class="kts-right-item-img img-responsive" src="https://byzan.vn/wp-content/uploads/2020/09/kien-truc-su-byzan-hien-dai-005.jpg" alt="kien-truc-su-byzan-hien-dai-005.jpg"> <span class="kts-right-item-name">Phạm Văn Kiểm</span>
+                                <img class="kts-right-item-img img-responsive"
+                                     src="https://byzan.vn/wp-content/uploads/2020/09/kien-truc-su-byzan-hien-dai-005.jpg"
+                                     alt="kien-truc-su-byzan-hien-dai-005.jpg"> <span class="kts-right-item-name">Phạm Văn Kiểm</span>
                                 <span class="kts-right-item-des">
                            <p> Tốt nghiệp Đại học Kiến trúc Hà Nội chuyên ngành Thiết Kế Nội thất với 8 năm kinh nghiệm vẽ 3D và Thiết kế Nội thất.</p>
                         </span>
@@ -376,7 +382,9 @@
                         </li>
                         <li data-index="6" class="kts-right-item kts-right-item6">
                             <a href="#">
-                                <img class="kts-right-item-img img-responsive" src="https://byzan.vn/wp-content/uploads/2020/09/kien-truc-su-byzan-hien-dai-006-768x1024.jpg" alt="kien-truc-su-byzan-hien-dai-006.jpg"> <span class="kts-right-item-name">Lê Minh Chuyên</span>
+                                <img class="kts-right-item-img img-responsive"
+                                     src="https://byzan.vn/wp-content/uploads/2020/09/kien-truc-su-byzan-hien-dai-006-768x1024.jpg"
+                                     alt="kien-truc-su-byzan-hien-dai-006.jpg"> <span class="kts-right-item-name">Lê Minh Chuyên</span>
                                 <span class="kts-right-item-des">
                            <p>Tốt nghiệp Đại học Kinh doanh Công nghệ Khoa Thiết kế với 7 năm kinh nghiệm trong ngành Thiết kế Nội thất, là người chuyên phụ trách sáng tạo các ý tưởng.</p>
                         </span>
@@ -385,7 +393,9 @@
                         </li>
                         <li data-index="7" class="kts-right-item kts-right-item7">
                             <a href="#">
-                                <img class="kts-right-item-img img-responsive" src="https://byzan.vn/wp-content/uploads/2019/01/kien-truc-su-byzan-hien-dai-1.1.jpg" alt="kien-truc-su-byzan-hien-dai-1.1.jpg"> <span class="kts-right-item-name">Đinh Văn Huy</span>
+                                <img class="kts-right-item-img img-responsive"
+                                     src="https://byzan.vn/wp-content/uploads/2019/01/kien-truc-su-byzan-hien-dai-1.1.jpg"
+                                     alt="kien-truc-su-byzan-hien-dai-1.1.jpg"> <span class="kts-right-item-name">Đinh Văn Huy</span>
                                 <span class="kts-right-item-des">
                            <p>Tốt nghiệp Đại học Mỹ Thuật Công Nghiệp chuyên ngành Thiết Kế Nội thất, chuyên viên các phần mềm Vẽ tay, Autocad, Photoshop, Sketchup.</p>
                         </span>
@@ -394,7 +404,9 @@
                         </li>
                         <li data-index="8" class="kts-right-item kts-right-item8">
                             <a href="#">
-                                <img class="kts-right-item-img img-responsive" src="https://byzan.vn/wp-content/uploads/2019/11/kien-truc-su-byzan-hien-dai-8.1-1-e1574413732106.png" alt="kien-truc-su-byzan-hien-dai-8.1.png"> <span class="kts-right-item-name">Matt Diggy</span>
+                                <img class="kts-right-item-img img-responsive"
+                                     src="https://byzan.vn/wp-content/uploads/2019/11/kien-truc-su-byzan-hien-dai-8.1-1-e1574413732106.png"
+                                     alt="kien-truc-su-byzan-hien-dai-8.1.png"> <span class="kts-right-item-name">Matt Diggy</span>
                                 <span class="kts-right-item-des">
                            <p>Chuyên gia hàng đầu về thiết kế nội thất hiện đại đền từ Anh - Mentor cho Phòng thiết kế Byzan - với các công trình villa cao cấp cho Influencer ở khắp nơi trên thế giới</p>
                         </span>
@@ -403,7 +415,9 @@
                         </li>
                         <li data-index="9" class="kts-right-item kts-right-item9">
                             <a href="#">
-                                <img class="kts-right-item-img img-responsive" src="https://byzan.vn/wp-content/uploads/2019/02/Kien-truc-su-Byzan-3.jpg" alt="kien-truc-su-byzan-hien-dai-8.1.png"> <span class="kts-right-item-name">Trần Thanh Tùng</span>
+                                <img class="kts-right-item-img img-responsive"
+                                     src="https://byzan.vn/wp-content/uploads/2019/02/Kien-truc-su-Byzan-3.jpg"
+                                     alt="kien-truc-su-byzan-hien-dai-8.1.png"> <span class="kts-right-item-name">Trần Thanh Tùng</span>
                                 <span class="kts-right-item-des">
                            <p>Tốt nghiệp Đại học xây dựng Hà Nội với 6 năm kinh nghiệm trong ngành Thiết kế Nội thất. Thanh Tùng chuyên phụ trách về mảng bổ kỹ thuật cũng như bóc tay khối lượng</p>
                         </span>
@@ -412,7 +426,9 @@
                         </li>
                         <li data-index="10" class="kts-right-item kts-right-item10">
                             <a href="#">
-                                <img class="kts-right-item-img img-responsive" src="https://byzan.vn/wp-content/uploads/2020/09/kien-truc-su-byzan-hien-dai-001-768x1024.jpg" alt="kien-truc-su-byzan-hien-dai-001.jpg"> <span class="kts-right-item-name">Lê Xuân Thiện</span>
+                                <img class="kts-right-item-img img-responsive"
+                                     src="https://byzan.vn/wp-content/uploads/2020/09/kien-truc-su-byzan-hien-dai-001-768x1024.jpg"
+                                     alt="kien-truc-su-byzan-hien-dai-001.jpg"> <span class="kts-right-item-name">Lê Xuân Thiện</span>
                                 <span class="kts-right-item-des">
                            <p>Chuyên gia hàng đầu về thiết kế nội thất hiện đại, tốt nghiệp đại học Waseda Nhật Bản, các phong cách thiết kế của Thiện chịu ảnh hưởng nhiều từ đất nước Á Đông này</p>
                         </span>
@@ -421,7 +437,9 @@
                         </li>
                         <li data-index="11" class="kts-right-item kts-right-item11">
                             <a href="#">
-                                <img class="kts-right-item-img img-responsive" src="https://byzan.vn/wp-content/uploads/2020/09/kien-truc-su-byzan-hien-dai-007-768x1024.jpg" alt="kien-truc-su-byzan-hien-dai-007.jpg"> <span class="kts-right-item-name">Nguyễn Thanh Vương</span>
+                                <img class="kts-right-item-img img-responsive"
+                                     src="https://byzan.vn/wp-content/uploads/2020/09/kien-truc-su-byzan-hien-dai-007-768x1024.jpg"
+                                     alt="kien-truc-su-byzan-hien-dai-007.jpg"> <span class="kts-right-item-name">Nguyễn Thanh Vương</span>
                                 <span class="kts-right-item-des">
                            <p>Tốt nghiệp Đại học Kiến trúc Hà Nội với 5 năm kinh nghiệm trong ngành Thiết kế Nội thất. Chuyên sâu trong việc kết hợp hoàn hảo giữa phong thủy và thiết kế nội thất</p>
                         </span>
@@ -430,7 +448,9 @@
                         </li>
                         <li data-index="12" class="kts-right-item kts-right-item12">
                             <a href="#">
-                                <img class="kts-right-item-img img-responsive" src="https://byzan.vn/wp-content/uploads/2019/02/Kien-truc-su-Byzan-1.jpg" alt="kien-truc-su-byzan-hien-dai-8.1.png"> <span class="kts-right-item-name">Đặng Tuấn Thành</span>
+                                <img class="kts-right-item-img img-responsive"
+                                     src="https://byzan.vn/wp-content/uploads/2019/02/Kien-truc-su-Byzan-1.jpg"
+                                     alt="kien-truc-su-byzan-hien-dai-8.1.png"> <span class="kts-right-item-name">Đặng Tuấn Thành</span>
                                 <span class="kts-right-item-des">
                            <p>Tốt nghiệp Đại học Mỹ thuật Hà Nội với 5 năm kinh nghiệm trong ngành Thiết kế Nội thất. Thành luôn được khách hàng yêu mến vì sự nhiệt tình, luôn đưa ra tư vấn phù hợp nhất với khách hàng.</p>
                         </span>
