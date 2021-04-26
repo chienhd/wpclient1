@@ -94,7 +94,7 @@ get_header();
                                         <div class="project-content-item_top">
                                             <div class="image">
 
-                                                <img src="http://localhost:8888/wp-content/uploads/2021/04/dai-dien-web-scaled-1.jpg"
+                                                <img src="http://nhadephanoi.vn/wp-content/uploads/2021/04/dai-dien-web-scaled-2.jpg"
                                                      alt="dai-dien-web-scaled-1.jpg">
                                             </div>
                                             <div class="info">
@@ -120,7 +120,7 @@ get_header();
                                         <div class="project-content-item_top">
                                             <div class="image">
 
-                                                <img src="http://localhost:8888/wp-content/uploads/2021/04/dai-dien-web-scaled-1.jpg"
+                                                <img src="http://nhadephanoi.vn/wp-content/uploads/2021/04/dai-dien-web-scaled-2.jpg"
                                                      alt="dai-dien-web-scaled-1.jpg">
                                             </div>
                                             <div class="info">
@@ -146,7 +146,7 @@ get_header();
                                         <div class="project-content-item_top">
                                             <div class="image">
 
-                                                <img src="http://localhost:8888/wp-content/uploads/2021/04/dai-dien-web-scaled-1.jpg"
+                                                <img src="http://nhadephanoi.vn/wp-content/uploads/2021/04/dai-dien-web-scaled-2.jpg"
                                                      alt="dai-dien-web-scaled-1.jpg">
                                             </div>
                                             <div class="info">
@@ -172,7 +172,7 @@ get_header();
                                         <div class="project-content-item_top">
                                             <div class="image">
 
-                                                <img src="http://localhost:8888/wp-content/uploads/2021/04/dai-dien-web-scaled-1.jpg"
+                                                <img src="http://nhadephanoi.vn/wp-content/uploads/2021/04/dai-dien-web-scaled-2.jpg"
                                                      alt="dai-dien-web-scaled-1.jpg">
                                             </div>
                                             <div class="info">
@@ -198,7 +198,7 @@ get_header();
                                         <div class="project-content-item_top">
                                             <div class="image">
 
-                                                <img src="http://localhost:8888/wp-content/uploads/2021/04/dai-dien-web-scaled-1.jpg"
+                                                <img src="http://nhadephanoi.vn/wp-content/uploads/2021/04/dai-dien-web-scaled-2.jpg"
                                                      alt="dai-dien-web-scaled-1.jpg">
                                             </div>
                                             <div class="info">
@@ -224,7 +224,7 @@ get_header();
                                         <div class="project-content-item_top">
                                             <div class="image">
 
-                                                <img src="http://localhost:8888/wp-content/uploads/2021/04/dai-dien-web-scaled-1.jpg"
+                                                <img src="http://nhadephanoi.vn/wp-content/uploads/2021/04/dai-dien-web-scaled-2.jpg"
                                                      alt="dai-dien-web-scaled-1.jpg">
                                             </div>
                                             <div class="info">
