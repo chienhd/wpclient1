@@ -61,18 +61,18 @@
 <a href="#" class="back-to-top"><img src="/wp-content/themes/client/assets/images/back-to-top.png" alt="to top"></a>
 <div class="support">
     <div class="support-item " style="background: #1e130b">
-        <a href="https://m.me/ahome8866" style="color: #fff">
-            <img src="https://noithatahome.vn//messicon.png">Messenger
+        <a href="<?php echo prefix_get_option('footer_tab_block_5_5'); ?>" style="color: #fff">
+            <img src="/wp-content/themes/client/assets/images/social/messicon.png">Messenger
         </a>
     </div>
     <div class="support-item " style="background: #1e130b">
-        <a href="tel:0981088866" style="color: #fff">
-            <img src="https://noithatahome.vn//phoneicon-1.png">0981088866
+        <a href="tel:<?php echo prefix_get_option('footer_tab_block_5_3') ?>" style="color: #fff">
+            <img src="/wp-content/themes/client/assets/images/social/phoneicon-1.png"><?php echo prefix_get_option('footer_tab_block_5_3') ?>
         </a>
     </div>
     <div class="support-item " style="background: #1e130b">
-        <a href="https://zalo.me/0973188866" style="color: #fff">
-            <img src="https://noithatahome.vn//zaloicon.png">Zalo
+        <a href="<?php echo prefix_get_option('footer_tab_block_5_4') ?>" style="color: #fff">
+            <img src="/wp-content/themes/client/assets/images/social/zaloicon.png">Zalo
         </a>
     </div>
 </div>

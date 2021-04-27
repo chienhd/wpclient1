@@ -125,21 +125,34 @@ if (class_exists('CSF')) {
 
     /**======================== Dự án đã hoàn thành =================================*/
     CSF::createSection($prefix, array(
-        'id' => 'home-project-finished', // Set a unique slug-like ID
-        'title' => 'Home Dự án đã hoàn thành',
+        'id' => 'home-project', // Set a unique slug-like ID
+        'title' => 'Home Thi công',
         'fields' => array(
             array(
-                'id' => 'home-project-finished-1',
+                'id' => 'home-project-title',
                 'type' => 'text',
                 'title' => 'Tiêu đề',
             ),
             array(
-                'id' => 'home-project-finished-2',
-                'type' => 'select',
-                'title' => 'Chọn một danh mục',
-                'placeholder' => 'Chọn một danh mục',
-                'options' => 'categories',
-            )
+                'id' => 'home-project-group',
+                'type' => 'group',
+                'title' => 'Dự án',
+                'fields' => array(
+                    array(
+                        'id' => 'name',
+                        'type' => 'text',
+                        'title' => 'Tên Dự án',
+                    ),
+                    array(
+                        'id' => 'category',
+                        'type' => 'select',
+                        'title' => 'Chọn một danh mục',
+                        'placeholder' => 'Chọn một danh mục',
+                        'options' => 'categories',
+                    ),
+
+                ),
+            ),
         )
     ));
     /**======================== end Dự án đã hoàn thành =================================*/
@@ -363,6 +376,21 @@ if (class_exists('CSF')) {
                 'type' => 'text',
                 'title' => 'Copy Right',
                 'default' => '© 2018 - Nội thất Ahome'
+            ),
+            array(
+                'id' => 'footer_tab_block_5_3',
+                'type' => 'text',
+                'title' => 'Phone',
+            ),
+            array(
+                'id' => 'footer_tab_block_5_4',
+                'type' => 'text',
+                'title' => 'Zalo',
+            ),
+            array(
+                'id' => 'footer_tab_block_5_5',
+                'type' => 'text',
+                'title' => 'Message',
             ),
         )
     ));
