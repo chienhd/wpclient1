@@ -15,7 +15,7 @@
     <!-- Nav tabs -->
     <?php
     $group = prefix_get_option('home-design-group');
-    if (isset($group)) { ?>
+    if (isset($group) && is_array($group)) { ?>
         <ul class="nav nav-tabs" role="tablist">
             <?php foreach ($group as $i => $name) { ?>
                 <li role="presentation" class="<?php if ($i == 0) echo 'active'; ?>">

@@ -4,12 +4,12 @@
             <ul class="list-unstyled">
                 <?php
                 $banners = prefix_get_option('opt-group-banner');
-                if (isset($banners) && count($banners)) {
+                if (isset($banners) && is_array($banners)) {
                     foreach ($banners as $key => $banner) {
-                        $image = $banner['opt-group-banner-logo']['url'];
-                        $head = $banner['opt-group-banner-head'];
-                        $subhead = $banner['opt-group-banner-subhead'];
-                        $link = $banner['opt-group-banner-link'];
+                        $image = $banner['opt-group-banner-logo']['url'] ?? null;
+                        $head = $banner['opt-group-banner-head'] ?? null;
+                        $subhead = $banner['opt-group-banner-subhead'] ?? null;
+                        $link = $banner['opt-group-banner-link'] ?? null;
                         ?>
                         <li data-transition="fade" data-slotamount="7" data-masterspeed="1000"
                             data-thumb="<?php echo $image; ?>">

@@ -8,198 +8,168 @@
  */
 
 get_header();
-?>
-    <main id="category" class="site-category">
-        <div class="title">
-            <h1 class="category-title">Tin tức</h1>
-        </div>
-        <div class="category-tab">
 
-                    <ul id="category-tab_top" class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#category-tab1" aria-controls="category-tab1" role="tab"
-                               data-toggle="tab" aria-expanded="true">Xu Hướng Nội
-                                Thất</a></li>
-                        <li role="presentation" class="">
-                            <a href="#category-tab2" aria-controls="category-tab2" role="tab"
-                               data-toggle="tab" aria-expanded="false">Chia Sẻ Kiến
-                                Thức</a></li>
-                        <li role="presentation" class="">
-                            <a href="#category-tab3" aria-controls="category-tab3" role="tab"
-                               data-toggle="tab" aria-expanded="false">BST Vật Liệu Mới
-                                2021</a></li>
-                    </ul>
+$cat = get_category( get_query_var( 'cat' ) );
+$cat_id = $cat->cat_ID;
+?>
+<main id="category" class="site-category">
+    <div class="title">
+        <h1 class="category-title"><?php echo $cat->name; ?></h1>
+    </div>
+    <?php 
+if(category_has_children($cat_id)) {
+    /**parent category*/
+    ?>
+<div class="category-tab">
+        <ul id="category-tab_top" class="nav nav-tabs" role="tablist">
+            <?php 
+            $categories = get_categories(
+                array( 'parent' => $cat_id )
+            );
+            if($categories) { 
+                foreach ($categories as $key => $value) {
+                ?>
+                    <li role="presentation" class="<?php if($key == 0){ echo 'active'; } ?>">
+                        <a href="#category-tab-<?php echo $key; ?>" aria-controls="category-tab-<?php echo $key; ?>" role="tab"
+                        data-toggle="tab" aria-expanded="true"><?php echo $value->name; ?></a></li>
+                <?php } ?>
+            </ul>
 
             <div class="tab-content wrap-project-content">
-                <div role="tabpanel" class="tab-pane in active" id="category-tab1">
+                <?php foreach ($categories as $key => $value) { ?>
+                <div role="tabpanel" class="tab-pane in <?php if($key == 0){ echo 'active'; } ?>" id="category-tab-<?php echo $key; ?>">
                     <div class="container container--mod">
                         <div class="row">
-                            <div class="col-md-4 col-sm-6">
-                                <div class="project-content-item">
-                                    <a href="#">
-                                        <div class="project-content-item_top">
-                                            <div class="image">
+                            <?php
+                             $query = new WP_Query(
+                                array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'order' => 'DESC',
+                                    'orderby' => 'ID',
+                                    'cat' => $value->cat_ID,
+                                    'posts_per_page' => 6
+                                )
+                            );
+                            $i = 1;
+                            while ($query->have_posts()) {
+                                $query->the_post();
+                               ?>
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="project-content-item">
+                                        <a href="<?php echo esc_url(get_permalink()) ?>">
+                                            <div class="project-content-item_top">
+                                                <div class="image">
 
-                                                <img src="http://localhost:8888/wp-content/uploads/2021/04/dai-dien-web-scaled-1.jpg"
-                                                     alt="dai-dien-web-scaled-1.jpg">
-                                            </div>
-                                            <div class="info">
-                                                <div class="name">Thi Công Nội Thất Chung Cư Imperia Minh Khai Theo
-                                                    Phong Cách Hiện
-                                                    Đại
+                                                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_title(); ?>">
+                                                </div>
+                                                <div class="info">
+                                                    <div class="name"><?php echo get_the_title(); ?>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="project-content-item_bottom clearfix">
-                                            <div class="number">01</div>
-                                            <div class="subtitle-wrap">
-                                                <h3 class="subtitle">Thi Công Nội Thất Chung Cư Imperia Minh Khai Theo
-                                                    Phong Cách Hiện Đại</h3>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="project-content-item">
-                                    <a href="#">
-                                        <div class="project-content-item_top">
-                                            <div class="image">
-
-                                                <img src="http://localhost:8888/wp-content/uploads/2021/04/dai-dien-web-scaled-1.jpg"
-                                                     alt="dai-dien-web-scaled-1.jpg">
-                                            </div>
-                                            <div class="info">
-                                                <div class="name">Thi Công Nội Thất Chung Cư Imperia Minh Khai Theo
-                                                    Phong Cách Hiện
-                                                    Đại
+                                            <div class="project-content-item_bottom clearfix">
+                                                <div class="number">0<?php echo $i; ?></div>
+                                                <div class="subtitle-wrap">
+                                                    <h3 class="subtitle"><?php echo get_the_title(); ?></h3>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="project-content-item_bottom clearfix">
-                                            <div class="number">01</div>
-                                            <div class="subtitle-wrap">
-                                                <h3 class="subtitle">Thi Công Nội Thất Chung Cư Imperia Minh Khai Theo
-                                                    Phong Cách Hiện Đại</h3>
-                                            </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="project-content-item">
-                                    <a href="#">
-                                        <div class="project-content-item_top">
-                                            <div class="image">
+                               <?php
 
-                                                <img src="http://localhost:8888/wp-content/uploads/2021/04/dai-dien-web-scaled-1.jpg"
-                                                     alt="dai-dien-web-scaled-1.jpg">
-                                            </div>
-                                            <div class="info">
-                                                <div class="name">Thi Công Nội Thất Chung Cư Imperia Minh Khai Theo
-                                                    Phong Cách Hiện
-                                                    Đại
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-content-item_bottom clearfix">
-                                            <div class="number">01</div>
-                                            <div class="subtitle-wrap">
-                                                <h3 class="subtitle">Thi Công Nội Thất Chung Cư Imperia Minh Khai Theo
-                                                    Phong Cách Hiện Đại</h3>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="project-content-item">
-                                    <a href="#">
-                                        <div class="project-content-item_top">
-                                            <div class="image">
-
-                                                <img src="http://localhost:8888/wp-content/uploads/2021/04/dai-dien-web-scaled-1.jpg"
-                                                     alt="dai-dien-web-scaled-1.jpg">
-                                            </div>
-                                            <div class="info">
-                                                <div class="name">Thi Công Nội Thất Chung Cư Imperia Minh Khai Theo
-                                                    Phong Cách Hiện
-                                                    Đại
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-content-item_bottom clearfix">
-                                            <div class="number">01</div>
-                                            <div class="subtitle-wrap">
-                                                <h3 class="subtitle">Thi Công Nội Thất Chung Cư Imperia Minh Khai Theo
-                                                    Phong Cách Hiện Đại</h3>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="project-content-item">
-                                    <a href="#">
-                                        <div class="project-content-item_top">
-                                            <div class="image">
-
-                                                <img src="http://localhost:8888/wp-content/uploads/2021/04/dai-dien-web-scaled-1.jpg"
-                                                     alt="dai-dien-web-scaled-1.jpg">
-                                            </div>
-                                            <div class="info">
-                                                <div class="name">Thi Công Nội Thất Chung Cư Imperia Minh Khai Theo
-                                                    Phong Cách Hiện
-                                                    Đại
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-content-item_bottom clearfix">
-                                            <div class="number">01</div>
-                                            <div class="subtitle-wrap">
-                                                <h3 class="subtitle">Thi Công Nội Thất Chung Cư Imperia Minh Khai Theo
-                                                    Phong Cách Hiện Đại</h3>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="project-content-item">
-                                    <a href="#">
-                                        <div class="project-content-item_top">
-                                            <div class="image">
-
-                                                <img src="http://localhost:8888/wp-content/uploads/2021/04/dai-dien-web-scaled-1.jpg"
-                                                     alt="dai-dien-web-scaled-1.jpg">
-                                            </div>
-                                            <div class="info">
-                                                <div class="name">Thi Công Nội Thất Chung Cư Imperia Minh Khai Theo
-                                                    Phong Cách Hiện
-                                                    Đại
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="project-content-item_bottom clearfix">
-                                            <div class="number">01</div>
-                                            <div class="subtitle-wrap">
-                                                <h3 class="subtitle">Thi Công Nội Thất Chung Cư Imperia Minh Khai Theo
-                                                    Phong Cách Hiện Đại</h3>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                               $i++;
+                        }
+                            wp_reset_postdata(); 
+                            ?>
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="category-tab2">...</div>
-                <div role="tabpanel" class="tab-pane" id="category-tab3">...</div>
+                 <?php } ?>
+     <!-- link here -->
+                <div class="container-fluid">
+                    <div class="col-xs-12 ">
+                 <a class="home-project-view-more hvr-grow" href="<?php echo $value->slug; ?>">Xem thêm&gt;&gt; "<?php echo $value->name ?>"</a>
+             </div>
+                 </div>
+            </div>
+
+            <?php
+            }
+            ?>
+    </div>
+<?php
+} else {
+    /** Category*/
+    ?>
+<div class="category-tab">
+        <div class="tab-content wrap-project-content">
+            <div class="container container--mod">
+               <div id="category-tab_top"></div>
+
+               <div class="row">
+
+                <?php if ( have_posts() ) :
+                    /* Start the Loop */
+                    $i = 1;
+                    while ( have_posts() ) :
+                        the_post();
+
+                        /*
+                         * Include the Post-Type-specific template for the content.
+                         * If you want to override this in a child theme, then include a file
+                         * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+                         */
+                        ?>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="project-content-item">
+                                <a href="<?php echo esc_url(get_permalink()) ?>">
+                                    <div class="project-content-item_top">
+                                        <div class="image">
+
+                                            <img src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                            alt="<?php echo get_the_title(); ?>">
+                                        </div>
+                                        <div class="info">
+                                            <div class="name"><?php echo get_the_title(); ?></div>
+                                        </div>
+                                    </div>
+                                    <div class="project-content-item_bottom clearfix">
+                                        <div class="number"><?php if($i < 10){ echo '0'.$i;}else{ echo $i; } ?></div>
+                                        <div class="subtitle-wrap">
+                                            <h3 class="subtitle"><?php echo get_the_title(); ?></h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    <?php
+                    $i++;
+                endwhile;
+
+                the_posts_navigation();
+
+            else :
+
+                get_template_part( 'template-parts/content', 'none' );
+
+            endif;
+            ?>
             </div>
         </div>
+    </div>
+</div>
 
-    </main><!-- #main -->
+    <?php
+}
+    ?>
+    
+
+
+<?php get_template_part('template-parts/home', 'choose-us'); ?>
+
+</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
