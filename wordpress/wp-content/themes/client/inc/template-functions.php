@@ -239,6 +239,71 @@ function category_has_children( $term_id = 0, $taxonomy = 'category' ) {
     return (is_array($children) && count($children));
 }
 
+/**
+ * Retrieves the navigation to next/previous post, when applicable.
+ *
+ * @since 4.1.0
+ * @since 4.4.0 Introduced the `in_same_term`, `excluded_terms`, and `taxonomy` arguments.
+ * @since 5.3.0 Added the `aria_label` parameter.
+ * @since 5.5.0 Added the `class` parameter.
+ *
+ * @param array $args {
+ *     Optional. Default post navigation arguments. Default empty array.
+ *
+ *     @type string       $prev_text          Anchor text to display in the previous post link. Default '%title'.
+ *     @type string       $next_text          Anchor text to display in the next post link. Default '%title'.
+ *     @type bool         $in_same_term       Whether link should be in a same taxonomy term. Default false.
+ *     @type int[]|string $excluded_terms     Array or comma-separated list of excluded term IDs. Default empty.
+ *     @type string       $taxonomy           Taxonomy, if `$in_same_term` is true. Default 'category'.
+ *     @type string       $screen_reader_text Screen reader text for the nav element. Default 'Post navigation'.
+ *     @type string       $aria_label         ARIA label text for the nav element. Default 'Posts'.
+ *     @type string       $class              Custom class for the nav element. Default 'post-navigation'.
+ * }
+ * @return string Markup for post links.
+ */
+function my_get_the_post_navigation( $args = array() ) {
+    // Make sure the nav element has an aria-label attribute: fallback to the screen reader text.
+
+    $args = wp_parse_args(
+        $args,
+        array(
+            'prev_text'          => '%title',
+            'next_text'          => '%title',
+            'in_same_term'       => false,
+            'excluded_terms'     => '',
+            'taxonomy'           => 'category',
+            'screen_reader_text' => __( 'Post navigation' ),
+            'aria_label'         => __( 'Posts' ),
+            'class'              => 'post-navigation',
+        )
+    );
+
+    $navigation = '';
+
+    $previous = get_previous_post_link(
+        '<div class="nav-previous">%link</div>',
+        $args['prev_text'],
+        $args['in_same_term'],
+        $args['excluded_terms'],
+        $args['taxonomy']
+    );
+
+    $next = get_next_post_link(
+        '<div class="nav-next">%link</div>',
+        $args['next_text'],
+        $args['in_same_term'],
+        $args['excluded_terms'],
+        $args['taxonomy']
+    );
+
+    // Only add markup if there's somewhere to navigate to.
+    if ( $previous || $next ) {
+        $navigation = _navigation_markup( $previous . $next, $args['class'], $args['screen_reader_text'], $args['aria_label'] );
+    }
+
+    return $navigation;
+}
+
 if(!function_exists('dd')) {
     function dd($input)
     {
