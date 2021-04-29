@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/wordpress-client.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../backup.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/exampledb/wp_comments.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/exampledb/wp_comments.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../db/exampledb/wp_options.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/exampledb/wp_options.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../db/exampledb/wp_postmeta.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/exampledb/wp_postmeta.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../db/exampledb/wp_posts.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/exampledb/wp_posts.ibd" afterDir="false" />
@@ -24,24 +25,9 @@
       <change beforePath="$PROJECT_DIR$/../db/mysql/innodb_index_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/mysql/innodb_index_stats.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../db/mysql/innodb_table_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/mysql/innodb_table_stats.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/app/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/app/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/app/js/app.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/app/js/chunk-vendors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/app/js/chunk-vendors.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/crop-thumbnails.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/functions/backendpreparer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/functions/editor.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/functions/helper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/functions/save.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/functions/settingsscreen.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/images/test_image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/readme.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/client/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/client/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/client/category-tin-tuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/client/category-tin-tuc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/client/template-parts/content-single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/client/template-parts/content-single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/client/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/client/category.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619446951192</updated>
       <workItem from="1619446952622" duration="8792000" />
-      <workItem from="1619708861656" duration="4461000" />
+      <workItem from="1619708861656" duration="6738000" />
     </task>
     <servers />
   </component>

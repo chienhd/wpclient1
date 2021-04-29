@@ -22,19 +22,21 @@ $categories = get_categories(
             <h1 class="category-title"><?php echo $news->name; ?></h1>
         </div>
         <div class="category-tab">
-            <ul id="category-tab_top" class="nav nav-tabs" role="tablist">
-                <?php
-                if ($categories) {
-                foreach ($categories as $key => $value) {
-                    ?>
-                    <li role="presentation" class="<?php if ($key == 0) {
-                        echo 'active';
-                    } ?>">
-                        <a href="#category-tab-<?php echo $key; ?>" aria-controls="category-tab-<?php echo $key; ?>"
-                           role="tab"
-                           data-toggle="tab" aria-expanded="true"><?php echo $value->name; ?></a></li>
-                <?php } ?>
-            </ul>
+            <div class="container-fluid">
+                <ul id="category-tab_top" class="nav nav-tabs" role="tablist">
+                    <?php
+                    if ($categories) {
+                    foreach ($categories as $key => $value) {
+                        ?>
+                        <li role="presentation" class="<?php if ($key == 0) {
+                            echo 'active';
+                        } ?>">
+                            <a href="#category-tab-<?php echo $key; ?>" aria-controls="category-tab-<?php echo $key; ?>"
+                               role="tab"
+                               data-toggle="tab" aria-expanded="true"><?php echo $value->name; ?></a></li>
+                    <?php } ?>
+                </ul>
+            </div>
 
             <div class="tab-content wrap-project-content">
                 <?php foreach ($categories as $key => $value) { ?>
