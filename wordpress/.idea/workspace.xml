@@ -2,16 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ca0655b-79d2-444a-8191-2085ee6bcf9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/client/template-parts/home-choose-us.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/wordpress-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backup.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/exampledb/wp_options.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/exampledb/wp_options.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/exampledb/wp_postmeta.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/exampledb/wp_postmeta.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/exampledb/wp_posts.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/exampledb/wp_posts.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/exampledb/wp_term_relationships.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/exampledb/wp_term_relationships.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/exampledb/wp_term_taxonomy.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/exampledb/wp_term_taxonomy.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/exampledb/wp_termmeta.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/exampledb/wp_termmeta.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/exampledb/wp_terms.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/exampledb/wp_terms.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/exampledb/wp_usermeta.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/exampledb/wp_usermeta.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/../db/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/../db/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/../db/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/../db/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/mysql/innodb_index_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/mysql/innodb_index_stats.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db/mysql/innodb_table_stats.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../db/mysql/innodb_table_stats.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/app/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/app/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/app/js/app.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/app/js/chunk-vendors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/app/js/chunk-vendors.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/crop-thumbnails.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/functions/backendpreparer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/functions/editor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/functions/helper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/functions/save.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/functions/settingsscreen.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/images/test_image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/crop-thumbnails/readme.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/client/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/client/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/client/front-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/client/front-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/client/inc/client-options.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/client/inc/client-options.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/client/inc/template-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/client/inc/template-functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/client/template-parts/home-architect.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/client/template-parts/home-architect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/client/template-parts/home-design.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/client/template-parts/home-design.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/client/template-parts/home-project-finished.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/client/template-parts/home-project-finished.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/client/category-tin-tuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/client/category-tin-tuc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/client/template-parts/content-single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/client/template-parts/content-single.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619446951192</updated>
       <workItem from="1619446952622" duration="8792000" />
+      <workItem from="1619708861656" duration="4461000" />
     </task>
     <servers />
   </component>
@@ -66,5 +97,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
