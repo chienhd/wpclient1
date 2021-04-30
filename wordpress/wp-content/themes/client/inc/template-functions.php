@@ -48,7 +48,7 @@ if ( ! function_exists( 'prefix_get_option' ) ) {
 function the_breadcrumb()
 {
     $showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
-    $delimiter = '&raquo;'; // delimiter between crumbs
+    $delimiter = ' / '; // delimiter between crumbs
     $home = 'Trang chủ'; // text for the 'Home' link
     $showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
     $before = '<span class="current">'; // tag before the current crumb
@@ -67,9 +67,9 @@ function the_breadcrumb()
             if ($thisCat->parent != 0) {
                 echo get_category_parents($thisCat->parent, true, ' ' . $delimiter . ' ');
             }
-            echo $before . 'Archive by category "' . single_cat_title('', false) . '"' . $after;
+            echo $before . single_cat_title('', false) . $after;
         } elseif (is_search()) {
-            echo $before . 'Search results for "' . get_search_query() . '"' . $after;
+            echo $before . get_search_query() . $after;
         } elseif (is_day()) {
             echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
             echo '<a href="' . get_month_link(get_the_time('Y'), get_the_time('m')) . '">' . get_the_time('F') . '</a> ' . $delimiter . ' ';

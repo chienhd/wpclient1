@@ -8,7 +8,16 @@
  */
 
 get_header();
+?>
+<div id="breadcrumb-wrap">
+    <div class="container container--mod">
+        <div class="row">
+            <?php the_breadcrumb(); ?>
+        </div>
+    </div>
+</div>
 
+<?php
 $cat = get_category(get_query_var('cat'));
 $cat_id = $cat->cat_ID;
 ?>

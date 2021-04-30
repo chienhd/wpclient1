@@ -16,7 +16,13 @@ $categories = get_categories(
 );
 
 ?>
-
+    <div id="breadcrumb-wrap">
+        <div class="container container--mod">
+            <div class="row">
+                <?php the_breadcrumb(); ?>
+            </div>
+        </div>
+    </div>
     <main id="category" class="site-category-news">
         <div class="title">
             <h1 class="category-title"><?php echo $news->name; ?></h1>
