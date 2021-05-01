@@ -19,7 +19,9 @@ $categories = get_categories(
     <div id="breadcrumb-wrap">
         <div class="container container--mod">
             <div class="row">
-                <?php the_breadcrumb(); ?>
+                <div class="col-xs-12">
+                    <?php the_breadcrumb(); ?>
+                </div>
             </div>
         </div>
     </div>

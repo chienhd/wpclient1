@@ -12,7 +12,9 @@ get_header();
 <div id="breadcrumb-wrap">
     <div class="container container--mod">
         <div class="row">
-            <?php the_breadcrumb(); ?>
+            <div class="col-xs-12">
+                <?php the_breadcrumb(); ?>
+            </div>
         </div>
     </div>
 </div>
@@ -162,7 +164,7 @@ $cat_id = $cat->cat_ID;
                                     <?php
                                     $i++;
                                 endwhile;
-                                the_posts_navigation();
+                                my_get_the_category_navigation();
                             else :
                                 get_template_part('template-parts/content', 'none');
                             endif;
