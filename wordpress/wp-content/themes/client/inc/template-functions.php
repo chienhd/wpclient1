@@ -322,7 +322,7 @@ if(!function_exists('dd')) {
     function dd($input)
     {
         echo '<pre>';
-        var_dump($input);
+        print_r($input);
         echo '</pre>';
         die;
     }

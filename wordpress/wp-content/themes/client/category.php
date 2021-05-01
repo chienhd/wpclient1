@@ -114,6 +114,16 @@ $cat_id = $cat->cat_ID;
                                 "<?php echo $value->name ?>"</a>
                         </div>
                     </div>
+
+                    <?php $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => -1,
+        'meta_key' => "featured_image"
+    );
+    $the_query = new WP_Query( $args ); 
+    dd($the_query);
+
+     ?>
                 </div>
             </div>
             <?php
@@ -169,6 +179,25 @@ $cat_id = $cat->cat_ID;
                                 get_template_part('template-parts/content', 'none');
                             endif;
                             ?>
+                        </div>
+
+                        <div class="row">
+                            <div class="title">
+                                <p><strong>Xem các chung cư cao cấp đang sử dụng Dịch vụ thiết kế nội thất của nhadephanoi.vn</strong></p>
+                            </div>
+                            <div class="col-dm-4">
+                                <p><span><img src="/wp-content/themes/client/assets/images/hot-1.gif"></span> <a href="">Thiết kế nội thất chung cư goldmark city</a></p>
+                            </div>
+                        <!--  <?php $args = array(
+                            'post_type' => 'post',
+                            'posts_per_page' => 15,
+                            'meta_key' => 'host_product',
+                            'meta_value'    => '1'
+                        );
+                         $the_query = new WP_Query( $args ); 
+                         dd($the_query);
+
+                         ?> -->
                         </div>
                     </div>
                 </div>

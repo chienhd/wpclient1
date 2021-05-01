@@ -26,11 +26,11 @@
     <div class="container">
         <div class="row">
             <?php
-            $group = array();
+            
 
             $group = prefix_get_option('home-choose-us-group');
-            if(!empty($group)) {
-
+            if(empty($group) || !is_array($group)) {
+                $group = array();
             }
             $group[0]['image'] = '<img alt="" class="icon-services" src="/wp-content/themes/client/assets/images/choose/100-NAM-KINH-NGHIEM.png" title="" height="auto" width="100%">';
             $group[1]['image'] = '<img alt="" class="icon-service" src="https://byzan.vn/wp-content/uploads/2019/01/QUY-TRINH-CHAT-CHE.png" title="" height="/wp-content/themes/client/assets/images/choose/QUY-TRINH-CHAT-CHE.pnguto" width="100%">';
