@@ -19,7 +19,9 @@ get_header();
 <main id="introduce">
     <div class="container">
         <div class="row">
-            <h1><?php echo get_the_title(); ?></h1>
+            <div class="col-xs-12">
+                <h1><?php echo get_the_title(); ?></h1>
+            </div>
         </div>
     </div>
     <section id="gt1" class="section-nd">

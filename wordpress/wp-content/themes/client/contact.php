@@ -16,10 +16,12 @@
 get_header();
 ?>
 
-<main id="introduce">
+<main id="contact">
     <div class="container">
         <div class="row">
-            <h1><?php echo get_the_title(); ?></h1>
+            <div class="col-xs-12">
+                <h1><?php echo get_the_title(); ?></h1>
+            </div>
         </div>
     </div>
     <div id="page-contact">
