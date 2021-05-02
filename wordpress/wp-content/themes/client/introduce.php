@@ -62,6 +62,10 @@ get_header();
     <section id="gt3" class="section-nd">
         <div class="container">
             <div class="row row-40">
+                <div class="col-xs-12 col-md-4 col-title col-title-order-1">
+                    <h2 class="title-section text-uppercase">CHẤT LƯỢNG DỊCH VỤ</h2>
+                    <div class="number">03</div>
+                </div>
                 <div class="col-xs-12 col-md-8 col-content text-justify">
                     <p>Một đơn vị được đánh giá là thành công khi nhận được nhiều nhất sự tín nhiệm, tin cậy và ủng hộ của khách hàng. Thấu hiểu một cách sâu sắc vấn đề đó, Ahome luôn truyền cảm hứng cho tất cả các thành viên trong tập thể, để bất cứ ai cũng luôn có được sự chăm chút sản phẩm đến từng chi tiết nhỏ nhất. Mọi giới hạn sẽ được phá vỡ để tạo nên những dịch vụ tốt nhất cho khách hàng:</p>
                     <ul>
@@ -71,7 +75,7 @@ get_header();
                         <li>Đảm bảo tuyệt đối về chất lượng và nguồn gốc xuất xứ của vật liệu, cam kết hoàn trả 100% chi phí nếu như có bất cứ sai phạm nào.</li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-md-4 col-title">
+                <div class="col-xs-12 col-md-4 col-title col-title-order-2">
                     <h2 class="title-section text-uppercase">CHẤT LƯỢNG DỊCH VỤ</h2>
                     <div class="number">03</div>
                 </div>
@@ -82,11 +86,11 @@ get_header();
     <section id="gt4" class="section-nd" style="background: url(https://noithatahome.vn/wp-content/uploads/2018/04/img_background.jpg) center;">
         <div class="container">
             <div class="row row-40">
-                <div class="col-xs-12 col-md-6 col-title">
+                <div class="col-xs-12 col-md-5 col-title">
                     <h2 class="title-section text-uppercase">NHÀ MÁY VÀ CÔNG NGHỆ</h2>
                     <div class="number">04</div>
                 </div>
-                <div class="col-xs-12 col-md-6 col-content text-justify">
+                <div class="col-xs-12 col-md-7 col-content text-justify">
                     <p>Để đáp ứng tối đa nhu cầu của khách hàng, hơn ai hết, chúng tôi luôn hiểu rằng cần có một sự đầu tư kỹ lưỡng vào vấn đề cơ sở vật chất, đặc biệt là hệ thống xưởng và nhà máy sản xuất.</p>
                     <p>Ahome đã đầu tư và xây dựng một hệ thống xưởng, nhà máy sản xuất với quy mô lên đến con số hàng nghìn ha. Đặc biệt, bên trong được trang bị đầy đủ các loại máy móc, trang thiết bị hiện đại theo quy chuẩn quốc tế, nhằm đáp ứng mọi hoạt động sản xuất của đội ngũ công nhân, mang đến cho khách hàng những sản phẩm chất lượng cao nhất, hoàn hảo và phù hợp với không gian.</p>
                     <p>Kỹ thuật cũng là vấn đề quan trọng không thể bỏ qua, việc áp dụng và chuyển giao công nghệ sản xuất tiên tiến của châu Âu được Ahome ưu tiên hàng đầu để đảm bảo một cách tối đa vấn đề công năng và thẩm mỹ cho từng sản phẩm.</p>
@@ -98,13 +102,13 @@ get_header();
     <section id="gt5" class="section-nd">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-7">
+                <div class="col-xs-12 col-md-7 col-content">
                     <img src="https://noithatahome.vn/wp-content/uploads/0J9A8484-copy.jpg">
                 </div>
-                <div class="col-xs-12 col-md-5">
+                <div class="col-xs-12 col-md-5 col-title">
                     <h2 class="title-section text-uppercase">NGUỒN NHÂN LỰC</h2>
                     <div class="number">05</div>
-                    <div class="text-justify clear">
+                    <div class="text-justify clearfix">
                         <p>Ahome sở hữu một đội ngũ nhân lực chất lượng cao, nhiệt tình, trách nhiệm, với tác phong làm việc chuyên nghiệp, tâm huyết, có khả năng tư vấn cho khách hàng một cách tận tình nhất.</p>
                         <p>Mỗi một KTS tại Ahome đều có bề dày kinh nghiệm trong lĩnh vực thiết kế nội thất, được đào tạo chuyên sâu từ những trường đại học kiến trúc danh giá, uy tín trong và ngoài nước. Tài năng và sự sáng tạo là những gì các KTS thể hiện trong từng ý tưởng thiết kế, cùng phương trâm “sáng tạo không giới hạn” để cho ra đời những “đứa con tinh thần” hoàn mỹ nhất.</p>
                         <p>Các nghệ nhân trong đội ngũ sản xuất của Ahome đều là những người thực sự có tài năng, tay nghề cao và am hiểu một cách chuyên sâu về gỗ cũng như vấn đề thi công nội thất.</p>

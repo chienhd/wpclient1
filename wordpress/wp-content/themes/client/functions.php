@@ -166,6 +166,22 @@ function client_scripts() {
 add_action( 'wp_enqueue_scripts', 'client_scripts' );
 
 /**
+ * admin style
+ */	
+add_action('admin_head', 'my_custom_fonts');
+
+function my_custom_fonts() {
+  echo '<style>
+	    form#edittag {
+			max-width: 100%;
+		}
+		.wp-admin.some-class-only-on-that-edit-page #edittag {
+		    max-width: 100%;
+		}
+  </style>';
+}
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';

@@ -33,6 +33,16 @@ $cat_id = $cat->cat_ID;
             ?>
             <div class="category-tab">
                 <div class="container-fluid">
+                    <?php 
+                    $description = get_field('category_top_description',  $cat->taxonomy. '_' . $cat->term_id);
+                    if(!empty($description)):
+                    ?>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <?php echo $description; ?>
+                        </div>
+                    </div>
+                    <?php endif; ?>
                     <ul id="category-tab_top" class="nav nav-tabs" role="tablist">
                         <?php
                         $categories = get_categories(
@@ -69,8 +79,6 @@ $cat_id = $cat->cat_ID;
                                             'orderby' => 'ID',
                                             'cat' => $value->cat_ID,
                                             'posts_per_page' => 6,
-                                            'meta_key' => 'host_product',
-                                            'meta_value'    => '0'
                                         )
                                     );
                                     $i = 1;
@@ -142,15 +150,27 @@ $cat_id = $cat->cat_ID;
                                     if($i % 5 == 0)
                                         echo '<div> <div class="col-md-4">';
                                     ?>
-                                    
-                                        <p><span><img src="/wp-content/themes/client/assets/images/hot-1.gif"></span> <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title() ?></a></p>
-                                    
+                                    <p>
+                                        <span><img src="/wp-content/themes/client/assets/images/hot-1.gif"></span> <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title() ?></a>
+                                    </p>
                                     <?php
                                     $i++;
                                 endwhile;
                                 ?>
                                 </div>
                             </div>
+                            <?php 
+                            $description = get_field('category_bottom_description',  $cat->taxonomy. '_' . $cat->term_id);
+                            if(!empty($description)):
+                            ?>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div id="cat-des-bottom">
+                                        <?php echo $description; ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endif; ?>
                         </div>
                     <?php endif; ?>
                 </div>
@@ -162,6 +182,15 @@ $cat_id = $cat->cat_ID;
             <div class="category-tab">
                 <div class="tab-content wrap-project-content">
                     <div class="container container--mod">
+                        <?php 
+                        $description = get_field('category_top_description',  $cat->taxonomy. '_' . $cat->term_id);
+                        if(!empty($description)): ?>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <?php echo $description; ?>
+                            </div>
+                        </div>
+                        <?php endif; ?>
                         <div id="category-tab_top"></div>
 
                         <div class="row">
@@ -229,15 +258,28 @@ $cat_id = $cat->cat_ID;
                                 if($i % 5 == 0)
                                     echo '<div> <div class="col-md-4">';
                                 ?>
-                                
-                                    <p><span><img src="/wp-content/themes/client/assets/images/hot-1.gif"></span> <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a></p>
-                                
+                                <p>
+                                    <span><img src="/wp-content/themes/client/assets/images/hot-1.gif"></span> <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a>
+                                </p>
                                 <?php
                                 $i++;
                             endwhile;
                             ?>
                             </div>
                         </div>
+
+                        <?php 
+                        $description = get_field('category_bottom_description',  $cat->taxonomy. '_' . $cat->term_id);
+                        if(!empty($description)):
+                        ?>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div id="cat-des-bottom">
+                                    <?php echo $description; ?>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

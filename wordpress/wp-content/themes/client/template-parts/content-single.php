@@ -50,35 +50,37 @@
                 $post_id = get_the_ID();
                 $current_post_type = get_post_type($post_id);
                 $cat = wp_get_post_categories($post_id);
-                $cat_id = $cat[0];
-                $query_args = array(
-                    'category__in' => $cat_id,
-                    'post_type' => $current_post_type,
-                    'post__not_in' => array($post_id),
-                    'posts_per_page' => '6',
-                );
+                if(isset($cat[0])) {
+                   $cat_id = $cat[0];
+                    $query_args = array(
+                        'category__in' => $cat_id,
+                        'post_type' => $current_post_type,
+                        'post__not_in' => array($post_id),
+                        'posts_per_page' => '6',
+                    );
 
-                $related_cats_post = new WP_Query($query_args);
-                $i = 1;
-                while ($related_cats_post->have_posts()) :
-                    $related_cats_post->the_post();
-                    ?>
-                    <div class="col-md-4 col-sm-6 col-xs-12 related-item<?php echo $i; ?>">
-                        <div class="ih-item square effect6 from_top_and_bottom">
-                            <a href="<?php echo get_the_permalink(); ?>">
-                                <div class="img"><img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="img"></div>
-                                <div class="info">
-                                    <h3><?php echo get_the_title(); ?></h3>
-                                </div>
-                            </a>
+                    $related_cats_post = new WP_Query($query_args);
+                    $i = 1;
+                    while ($related_cats_post->have_posts()) :
+                        $related_cats_post->the_post();
+                        ?>
+                        <div class="col-md-4 col-sm-6 col-xs-12 related-item<?php echo $i; ?>">
+                            <div class="ih-item square effect6 from_top_and_bottom">
+                                <a href="<?php echo get_the_permalink(); ?>">
+                                    <div class="img"><img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="img"></div>
+                                    <div class="info">
+                                        <h3><?php echo get_the_title(); ?></h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <a class="related-item-title"
+                               href="<?php echo get_the_permalink(); ?>"><span><?php echo get_the_title(); ?></span></a>
                         </div>
-                        <a class="related-item-title"
-                           href="<?php echo get_the_permalink(); ?>"><span><?php echo get_the_title(); ?></span></a>
-                    </div>
-                    <?php
-                    $i++;
-                endwhile; // End of the loop.
-                wp_reset_postdata();
+                        <?php
+                        $i++;
+                    endwhile; // End of the loop.
+                    wp_reset_postdata(); 
+                }
                 ?>
         </div>
     </div>
