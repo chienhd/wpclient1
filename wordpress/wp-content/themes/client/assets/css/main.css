@@ -27,6 +27,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     border: none;
+    border-radius: 0;
 }
 
 #main-menu-navbar-collapse {
@@ -164,6 +165,11 @@ ul {
     color: #fff;
 }
 
+@media(max-width: 991.98px) and (min-width: 768px) {
+    #menu-main-menu-right > li > a {
+        padding: 10px 10px;
+    }
+}
 @media (max-width: 767.98px) {
     #masthead {
         position: static;
@@ -240,10 +246,13 @@ ul {
 
 /*========================================Home========================================*/
 /*home banner*/
+.page-body-content {
+    margin-top: 45px !important;
+}
+
 #slideshow {
     width: 100%;
     position: relative;
-    margin-top: 80px;
 }
 
 .slide-title {
@@ -358,7 +367,7 @@ ul {
     width: 100%;
     padding: 0;
     display: block;
-    background-color: #000 !important;
+    border-bottom: 1px solid #000 !important;
     z-index: 1;
 }
 
@@ -393,15 +402,26 @@ ul {
 }
 
 .home-wrap-project ul.nav-tabs {
-    border: none;
+    /*border: none;
     text-align: center;
     display: block;
     margin: 0 auto;
-    width: max-content;
+    width: max-content;*/
+    width: 100%;
+    float: initial;
+    clear: both;
+    margin-bottom: 0;
+    text-align: center;
+    border: none;
 }
 
 .home-wrap-project ul.nav-tabs li {
+    /*display: inline-block;*/
+    list-style: none;
     display: inline-block;
+    text-align: center;
+    margin: 5px;
+    float: none;
 }
 
 .home-wrap-project ul.nav-tabs li a {
@@ -415,7 +435,6 @@ ul {
     background-color: transparent;
     border: 1px solid #878786;
     border-radius: 3px;
-    margin-right: 18px;
 }
 
 .home-wrap-project ul.nav-tabs li.active a {
@@ -446,7 +465,39 @@ ul {
         padding-right: 20px;
     }
 }
+@media(max-width: 991.98px) {
+    .page-body-content {
+        margin-top: 76px !important;
+    }
+    .home-info-title {
+        margin-top: 50px;
+    }
+    .vc_text_separator .separator_content {
+        padding: 16px 30px;
+    }
+    .home-info-title .vc_text_separator .separator_wrapper {
+        padding: 0 20px;
+    }
+    .home-wrap-project {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media(max-width: 575.98px) {
+    .vc_text_separator .separator_line {
+        display: none;
+    }
+    .home-info-title .vc_text_separator .separator_wrapper {
+        padding: 0 0px;
+    }
+    .vc_text_separator .separator_content {
+        padding: 12px 20px;
+    }
+}
 
+@media(max-width: 575.98px) {
+
+}
 .project-content-item {
     margin-bottom: 20px;
 }
@@ -656,6 +707,16 @@ ul {
     .home-choose-us .service-v1-section {
         margin-bottom: 20px;
     }
+    .project-content-item_top {
+        padding-top: 50%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .project-content-item_bottom .subtitle,
+    .project-content-item_bottom .number {
+        font-size: 15px;
+    }
 }
 
 /*Home choose us*/
@@ -694,7 +755,9 @@ ul {
 }
 
 #home-customer-right-frm {
-    width: 100%;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
 }
 
@@ -731,6 +794,15 @@ ul {
 @media (min-width: 1200px) {
     #home-customer-wrap > .container > .row > div {
         padding: 40px 350px !important;
+    }
+}
+
+@media(max-width: 767.98px) {
+    #home-customer-wrap > .container > .row > div {
+        padding: 40px 12px !important;
+    }
+    #home-customer-right-frm {
+        max-width: 90%;
     }
 }
 
@@ -857,8 +929,10 @@ ul {
     font-size: 13px;
     font-weight: 700;
 }
-
-.kts-right-item-des p {
+.kts-right-item-des {
+    display: block;
+}
+.kts-right-item-des, .kts-right-item-des p {
     font-size: 12px;
     line-height: 1.2;
 }
@@ -894,7 +968,12 @@ ul {
         padding-top: 60px;
     }
 }
-
+@media(max-width: 991.98px) {
+    .home-kts-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 @media (max-width: 767px) {
     .home-kts-title {
         font-size: 20px;
@@ -1290,7 +1369,7 @@ img {
     text-transform: uppercase;
     font-size: 24px;
     padding-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -1324,7 +1403,6 @@ img {
 }
 @media (max-width: 767.98px) {
     #category {
-        margin-top: 45px;
     }
 }
 
@@ -1629,7 +1707,7 @@ img {
 /*
 breadcrumbs*/
 #breadcrumb-wrap {
-    margin-top: 50px;
+    margin-top: 90px;
 }
 #breadcrumb-wrap .current {
     text-transform: uppercase;
@@ -1770,3 +1848,8 @@ main#contact h1 {
     margin-top: 0;
 }
     
+@media(max-width: 767.98px) {
+    #breadcrumb-wrap {
+        margin-top: 10px;
+    }
+}

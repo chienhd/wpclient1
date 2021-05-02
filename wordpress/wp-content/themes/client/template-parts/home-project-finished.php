@@ -16,16 +16,18 @@
     <?php
     $group = prefix_get_option('home-project-group');
     if (isset($group) && is_array($group)) { ?>
-        <ul class="nav nav-tabs" role="tablist">
-            <?php foreach ($group as $i => $item) { ?>
-                <li role="presentation" class="<?php if ($i == 0) echo 'active'; ?>">
-                    <a href="#tab-project-<?php echo $item['category']; ?>"
-                       aria-controls="tab-project-<?php echo $item['category']; ?>" role="tab"
-                       data-toggle="tab"><?php echo $item['name'] ?>
-                    </a>
-                </li>
-            <?php } ?>
-        </ul>
+        <div class="container-fluid">
+            <ul class="nav nav-tabs" role="tablist">
+                <?php foreach ($group as $i => $item) { ?>
+                    <li role="presentation" class="<?php if ($i == 0) echo 'active'; ?>">
+                        <a href="#tab-project-<?php echo $item['category']; ?>"
+                           aria-controls="tab-project-<?php echo $item['category']; ?>" role="tab"
+                           data-toggle="tab"><?php echo $item['name'] ?>
+                        </a>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
         <!-- Tab panes -->
         <div class="tab-content wrap-project-content">
             <?php foreach ($group as $key => $item) { ?>

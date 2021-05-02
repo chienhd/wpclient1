@@ -70,7 +70,7 @@ $cat_id = $cat->cat_ID;
                                             'cat' => $value->cat_ID,
                                             'posts_per_page' => 6,
                                             'meta_key' => 'host_product',
-                                            'meta_value'    => '1'
+                                            'meta_value'    => '0'
                                         )
                                     );
                                     $i = 1;
@@ -110,46 +110,46 @@ $cat_id = $cat->cat_ID;
                         </div>
                     <?php endforeach; ?>
 
-                    <div class="container-fluid">
-                        <div class="col-xs-12 ">
-                            <a class="home-project-view-more hvr-grow" href="<?php echo $value->slug; ?>">Xem thêm&gt;&gt;
-                                "<?php echo $value->name ?>"</a>
+                    <div class="container--mod">
+                        <div class="row">
+                            <div class="col-xs-12 ">
+                                <a class="home-project-view-more hvr-grow" href="<?php echo $value->slug; ?>">Xem thêm&gt;&gt;
+                                    "<?php echo $value->name ?>"</a>
+                            </div>
                         </div>
                     </div>
                         <?php $args = array(
                                 'post_type' => 'post',
                                 'posts_per_page' => 15,
+                                'cat' => $value->cat_ID,
                                 'meta_key' => 'host_product',
                                 'meta_value'    => '1'
                             );
                             $host_product = new WP_Query( $args ); 
                             if($host_product->have_posts()):
                         ?>
-                        <div class="row">
-                            <div class="title">
-                                <p><strong>Xem các chung cư cao cấp đang sử dụng Dịch vụ thiết kế nội thất của nhadephanoi.vn</strong></p>
-                            </div>
-                            <div class="col-dm-4">
-                            <?php $args = array(
-                                'post_type' => 'post',
-                                'posts_per_page' => 15,
-                                'meta_key' => 'host_product',
-                                'meta_value'    => '1'
-                            );
-                            $host_product = new WP_Query( $args ); 
-                            $i = 1;
-                            while ($host_product->have_posts()) :
-                                $host_product->the_post();
-                                if($i % 5 == 0)
-                                    echo '<div> <div class="col-dm-4">';
-                                ?>
-                                
-                                    <p><span><img src="/wp-content/themes/client/assets/images/hot-1.gif"></span> <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title() ?></a></p>
-                                
+                        <div class="container--mod">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="title">
+                                    <p><strong>Xem các chung cư cao cấp đang sử dụng Dịch vụ thiết kế nội thất của nhadephanoi.vn</strong></p>
+                                </div>
+                                </div>
+                                <div class="col-md-4">
                                 <?php
-                                $i++;
-                            endwhile;
-                            ?>
+                                while ($host_product->have_posts()) :
+                                    $host_product->the_post();
+                                    if($i % 5 == 0)
+                                        echo '<div> <div class="col-md-4">';
+                                    ?>
+                                    
+                                        <p><span><img src="/wp-content/themes/client/assets/images/hot-1.gif"></span> <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title() ?></a></p>
+                                    
+                                    <?php
+                                    $i++;
+                                endwhile;
+                                ?>
+                                </div>
                             </div>
                         </div>
                     <?php endif; ?>
@@ -214,10 +214,11 @@ $cat_id = $cat->cat_ID;
                             <div class="title">
                                 <p><strong>Xem các chung cư cao cấp đang sử dụng Dịch vụ thiết kế nội thất của nhadephanoi.vn</strong></p>
                             </div>
-                            <div class="col-dm-4">
+                            <div class="col-md-4">
                             <?php $args = array(
                                 'post_type' => 'post',
                                 'posts_per_page' => 15,
+                                'cat' => $cat->cat_ID,
                                 'meta_key' => 'host_product',
                                 'meta_value'    => '1'
                             );
@@ -226,7 +227,7 @@ $cat_id = $cat->cat_ID;
                             while ($host_product->have_posts()) :
                                 $host_product->the_post();
                                 if($i % 5 == 0)
-                                    echo '<div> <div class="col-dm-4">';
+                                    echo '<div> <div class="col-md-4">';
                                 ?>
                                 
                                     <p><span><img src="/wp-content/themes/client/assets/images/hot-1.gif"></span> <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a></p>
@@ -244,7 +245,10 @@ $cat_id = $cat->cat_ID;
         }
         ?>
 
-        <?php get_template_part('template-parts/home', 'choose-us'); ?>
+        <?php
+            get_template_part('template-parts/home', 'choose-us');
+            get_template_part('template-parts/home', 'contact');
+        ?>
 
     </main><!-- #main -->
 

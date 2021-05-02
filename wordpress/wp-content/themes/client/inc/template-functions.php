@@ -148,15 +148,15 @@ function custom_post_type() {
 
 // Set UI labels for Custom Post Type
     $labels = array(
-        'name'                => _x( 'Architects', 'Post Type General Name', 'client' ),
-        'singular_name'       => _x( 'Architects', 'Post Type Singular Name', 'client' ),
-        'menu_name'           => __( 'Architects', 'client' ),
-        'parent_item_colon'   => __( 'Parent Architects', 'client' ),
-        'all_items'           => __( 'All Architects', 'client' ),
-        'view_item'           => __( 'View Architect', 'client' ),
-        'add_new_item'        => __( 'Add New Architect', 'client' ),
+        'name'                => _x( 'Customers', 'Post Type General Name', 'client' ),
+        'singular_name'       => _x( 'Customers', 'Post Type Singular Name', 'client' ),
+        'menu_name'           => __( 'Customers', 'client' ),
+        'parent_item_colon'   => __( 'Parent Customers', 'client' ),
+        'all_items'           => __( 'All Customers', 'client' ),
+        'view_item'           => __( 'View Customer', 'client' ),
+        'add_new_item'        => __( 'Add New Customer', 'client' ),
         'add_new'             => __( 'Add New', 'client' ),
-        'edit_item'           => __( 'Edit Architect', 'client' ),
+        'edit_item'           => __( 'Edit Customer', 'client' ),
         'update_item'         => __( 'Update Architect', 'client' ),
         'search_items'        => __( 'Search Architect', 'client' ),
         'not_found'           => __( 'Not Found', 'client' ),

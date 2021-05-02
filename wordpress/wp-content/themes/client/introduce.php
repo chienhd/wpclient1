@@ -16,7 +16,8 @@
 get_header();
 ?>
 
-<main id="introduce">
+<main id="introduce" class="page-body-content">
+    <?php get_template_part('template-parts/home', 'banner'); ?>
     <div class="container">
         <div class="row">
             <div class="col-xs-12">

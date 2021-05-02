@@ -19,7 +19,10 @@ get_header();
 			// If comments are open or we have at least one comment, load up the comment template.
 		endwhile; // End of the loop.
 		?>
-		<?php get_template_part('template-parts/home', 'choose-us'); ?>
+		<?php
+			get_template_part('template-parts/home', 'choose-us');
+            get_template_part('template-parts/home', 'contact');
+		 ?>
 	</main><!-- #main -->
 
 <?php

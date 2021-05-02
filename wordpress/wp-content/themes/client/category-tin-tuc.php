@@ -116,7 +116,10 @@ $categories = get_categories(
         </div>
 
 
-        <?php get_template_part('template-parts/home', 'choose-us'); ?>
+        <?php 
+            get_template_part('template-parts/home', 'choose-us');
+            get_template_part('template-parts/home', 'contact');
+        ?>
 
     </main><!-- #main -->
 

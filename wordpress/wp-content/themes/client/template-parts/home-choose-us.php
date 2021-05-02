@@ -29,14 +29,11 @@
             
 
             $group = prefix_get_option('home-choose-us-group');
-            if(empty($group) || !is_array($group)) {
-                $group = array();
-            }
-            $group[0]['image'] = '<img alt="" class="icon-services" src="/wp-content/themes/client/assets/images/choose/100-NAM-KINH-NGHIEM.png" title="" height="auto" width="100%">';
-            $group[1]['image'] = '<img alt="" class="icon-service" src="https://byzan.vn/wp-content/uploads/2019/01/QUY-TRINH-CHAT-CHE.png" title="" height="/wp-content/themes/client/assets/images/choose/QUY-TRINH-CHAT-CHE.pnguto" width="100%">';
-            $group[2]['image'] = '<img alt="" class="icon-service" src="/wp-content/themes/client/assets/images/choose/icon-phong-thuy1.png" title="" height="auto" width="100%">';
-            $group[3]['image'] = '<img alt="" class="icon-service" src="/wp-content/themes/client/assets/images/choose/CAM-KET-TIEN-DO-123.png" title="" height="auto" width="100%">';
-            if ($group) {
+            if(!empty($group) && is_array($group)) {
+                $group[0]['image'] = '<img alt="" class="icon-services" src="/wp-content/themes/client/assets/images/choose/100-NAM-KINH-NGHIEM.png" title="" height="auto" width="100%">';
+                $group[1]['image'] = '<img alt="" class="icon-service" src="https://byzan.vn/wp-content/uploads/2019/01/QUY-TRINH-CHAT-CHE.png" title="" height="/wp-content/themes/client/assets/images/choose/QUY-TRINH-CHAT-CHE.pnguto" width="100%">';
+                $group[2]['image'] = '<img alt="" class="icon-service" src="/wp-content/themes/client/assets/images/choose/icon-phong-thuy1.png" title="" height="auto" width="100%">';
+                $group[3]['image'] = '<img alt="" class="icon-service" src="/wp-content/themes/client/assets/images/choose/CAM-KET-TIEN-DO-123.png" title="" height="auto" width="100%">';
                 foreach ($group as $key => $item) {
                     ?>
                     <div class="col-md-3 col-sm-6">
@@ -44,7 +41,7 @@
                             <div class="service-v1">
                                 <?php echo $item['image']; ?>
                             </div>
-                            <?php //echo $item['content']; ?>
+                            <?php echo $item['content']; ?>
                         </div>
                     </div>
                     <?php
