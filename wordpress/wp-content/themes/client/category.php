@@ -68,7 +68,9 @@ $cat_id = $cat->cat_ID;
                                             'order' => 'DESC',
                                             'orderby' => 'ID',
                                             'cat' => $value->cat_ID,
-                                            'posts_per_page' => 6
+                                            'posts_per_page' => 6,
+                                            'meta_key' => 'host_product',
+                                            'meta_value'    => '1'
                                         )
                                     );
                                     $i = 1;
@@ -114,16 +116,43 @@ $cat_id = $cat->cat_ID;
                                 "<?php echo $value->name ?>"</a>
                         </div>
                     </div>
-
-                    <?php $args = array(
-        'post_type' => 'post',
-        'posts_per_page' => -1,
-        'meta_key' => "featured_image"
-    );
-    $the_query = new WP_Query( $args ); 
-    dd($the_query);
-
-     ?>
+                        <?php $args = array(
+                                'post_type' => 'post',
+                                'posts_per_page' => 15,
+                                'meta_key' => 'host_product',
+                                'meta_value'    => '1'
+                            );
+                            $host_product = new WP_Query( $args ); 
+                            if($host_product->have_posts()):
+                        ?>
+                        <div class="row">
+                            <div class="title">
+                                <p><strong>Xem các chung cư cao cấp đang sử dụng Dịch vụ thiết kế nội thất của nhadephanoi.vn</strong></p>
+                            </div>
+                            <div class="col-dm-4">
+                            <?php $args = array(
+                                'post_type' => 'post',
+                                'posts_per_page' => 15,
+                                'meta_key' => 'host_product',
+                                'meta_value'    => '1'
+                            );
+                            $host_product = new WP_Query( $args ); 
+                            $i = 1;
+                            while ($host_product->have_posts()) :
+                                $host_product->the_post();
+                                if($i % 5 == 0)
+                                    echo '<div> <div class="col-dm-4">';
+                                ?>
+                                
+                                    <p><span><img src="/wp-content/themes/client/assets/images/hot-1.gif"></span> <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title() ?></a></p>
+                                
+                                <?php
+                                $i++;
+                            endwhile;
+                            ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
             <?php
@@ -186,18 +215,27 @@ $cat_id = $cat->cat_ID;
                                 <p><strong>Xem các chung cư cao cấp đang sử dụng Dịch vụ thiết kế nội thất của nhadephanoi.vn</strong></p>
                             </div>
                             <div class="col-dm-4">
-                                <p><span><img src="/wp-content/themes/client/assets/images/hot-1.gif"></span> <a href="">Thiết kế nội thất chung cư goldmark city</a></p>
+                            <?php $args = array(
+                                'post_type' => 'post',
+                                'posts_per_page' => 15,
+                                'meta_key' => 'host_product',
+                                'meta_value'    => '1'
+                            );
+                            $host_product = new WP_Query( $args ); 
+                            $i = 1;
+                            while ($host_product->have_posts()) :
+                                $host_product->the_post();
+                                if($i % 5 == 0)
+                                    echo '<div> <div class="col-dm-4">';
+                                ?>
+                                
+                                    <p><span><img src="/wp-content/themes/client/assets/images/hot-1.gif"></span> <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a></p>
+                                
+                                <?php
+                                $i++;
+                            endwhile;
+                            ?>
                             </div>
-                        <!--  <?php $args = array(
-                            'post_type' => 'post',
-                            'posts_per_page' => 15,
-                            'meta_key' => 'host_product',
-                            'meta_value'    => '1'
-                        );
-                         $the_query = new WP_Query( $args ); 
-                         dd($the_query);
-
-                         ?> -->
                         </div>
                     </div>
                 </div>

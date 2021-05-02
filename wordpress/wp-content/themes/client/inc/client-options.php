@@ -203,6 +203,52 @@ if (class_exists('CSF')) {
         )
     ));
     /**======================== end chon chúng tôi ========================*/
+    /*Contact form*/
+     CSF::createSection($prefix, array(
+        'id' => 'contact-form', // Set a unique slug-like ID
+        'title' => 'Form liên Hệ',
+        'fields' => array(
+            array(
+                'id' => 'contact-form-1',
+                'type' => 'text',
+                'title' => 'Thêm short code contact Form',
+            ),
+        )
+    ));
+    /*end Contact form*/
+        /*Contact form*/
+     CSF::createSection($prefix, array(
+        'id' => 'home-news', // Set a unique slug-like ID
+        'title' => 'Home Tin Tức',
+        'fields' => array(
+            array(
+                'id' => 'home-news-1',
+                'type' => 'text',
+                'title' => 'Tiêu đề',
+            ),
+            array(
+              'id'    => 'home-news-2',
+              'type'  => 'code_editor',
+              'title'   => 'video (iframe)',
+              'sanitize' => false,
+              'settings' => array(
+                    'theme' => 'shadowfox',
+                    'mode' => 'htmlmixed',
+              ),
+            ),
+            array(
+              'id'          => 'home-news-3',
+              'type'        => 'select',
+              'title'       => 'Chọn bài posts',
+              'placeholder' => 'Select posts',
+              'chosen'      => true,
+              'multiple'    => true,
+              'sortable'    => true,
+              'options'     => 'posts',
+            ),
+        )
+    ));
+    /*end Contact form*/
     /**================Footer Options================*/
     // Create a top-tab
     CSF::createSection($prefix, array(

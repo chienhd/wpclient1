@@ -1000,6 +1000,11 @@ ul {
 #home-news .thumb-small .thumb-excerpt {
     margin-bottom: 5px;
     line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 #home-news .thumb-small a.img-thumb {
@@ -1020,7 +1025,21 @@ ul {
     top: 0;
     left: 0;
     z-index: 1;
-    display: none
+}
+
+#home-news .content-section .col-right {
+    overflow-y: auto;
+    max-height: 352px;
+}
+
+#home-news .content-section .col-right::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#home-news .content-section .col-right {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 /*========================================End Home========================================*/
