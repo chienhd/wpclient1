@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: contact
+ * Template Name: Contact
 
  *
  * This is the template that displays all pages by default.

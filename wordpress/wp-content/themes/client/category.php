@@ -39,7 +39,9 @@ $cat_id = $cat->cat_ID;
                     ?>
                     <div class="row">
                         <div class="col-xs-12">
-                            <?php echo $description; ?>
+                            <div class="taxonomy-description">
+                                <?php echo $description; ?>
+                            </div>
                         </div>
                     </div>
                     <?php endif; ?>
@@ -148,7 +150,7 @@ $cat_id = $cat->cat_ID;
                                 while ($host_product->have_posts()) :
                                     $host_product->the_post();
                                     if($i % 5 == 0)
-                                        echo '<div> <div class="col-md-4">';
+                                        echo '</div> <div class="col-md-4">';
                                     ?>
                                     <p>
                                         <span><img src="/wp-content/themes/client/assets/images/hot-1.gif"></span> <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title() ?></a>
@@ -187,7 +189,9 @@ $cat_id = $cat->cat_ID;
                         if(!empty($description)): ?>
                         <div class="row">
                             <div class="col-xs-12">
-                                <?php echo $description; ?>
+                                <div class="taxonomy-description">
+                                    <?php echo $description; ?>
+                                </div>
                             </div>
                         </div>
                         <?php endif; ?>
@@ -258,7 +262,7 @@ $cat_id = $cat->cat_ID;
                             while ($host_product->have_posts()) :
                                 $host_product->the_post();
                                 if($i % 5 == 0)
-                                    echo '<div> <div class="col-md-4">';
+                                    echo '</div> <div class="col-md-4">';
                                 ?>
                                 <p>
                                     <span><img src="/wp-content/themes/client/assets/images/hot-1.gif"></span> <a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a>

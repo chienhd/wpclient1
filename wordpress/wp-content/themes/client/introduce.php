@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: introduce
+ * Template Name: Introduce
 
  *
  * This is the template that displays all pages by default.

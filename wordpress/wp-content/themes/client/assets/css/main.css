@@ -800,12 +800,6 @@ ul {
     padding: 40px !important;
 }
 
-@media (min-width: 992px) {
-    #home-customer-wrap > .container > .row > div {
-        padding: 40px 350px !important;
-    }
-}
-
 @media (min-width: 1200px) {
     #home-customer-wrap > .container > .row > div {
         padding: 40px 350px !important;
@@ -1188,6 +1182,7 @@ footer .widget a {
 
 .footer_bottom {
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .footer_bottom ul {
@@ -1200,6 +1195,7 @@ footer .widget a {
     float: left;
     text-align: center;
     width: calc(100% / 8);
+    margin-top: 10px;
 }
 
 .footer_widget_newspapers ul {
@@ -1279,6 +1275,9 @@ footer .widget a {
 
 
 @media (max-width: 767.98px) {
+    .footer_bottom {
+        margin-top: 0;
+    }
     .footer_bottom ul li {
         width: calc(100% / 4);
     }
@@ -1286,6 +1285,9 @@ footer .widget a {
     .footer_bottom ul li img {
         max-width: 100%;
         height: auto;
+    }
+    .copyright {
+        margin-bottom: 36px;
     }
 }
 
@@ -1382,7 +1384,10 @@ img {
 /*==============================Category==============================*/
 #category {
 }
-
+.taxonomy-description {
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
 .category-title {
     border-bottom: none !important;
     text-transform: uppercase;
@@ -1494,6 +1499,10 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#single-content ul {
+    padding-left: 15px;
 }
 
 .wp-block-image {

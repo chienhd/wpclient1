@@ -33,8 +33,8 @@
 
     <?php
     $gallery_opt = prefix_get_option('footer_tab_block_5');
-    $gallery_ids = explode(',', $gallery_opt);
-    if (!empty($gallery_ids)) {
+    if (!empty($gallery_opt)) {
+        $gallery_ids = explode(',', $gallery_opt);
         ?>
         <div class="container">
             <div class="footer_bottom">
