@@ -240,8 +240,10 @@ $cat_id = $cat->cat_ID;
                         </div>
 
                         <div class="row">
-                            <div class="title">
-                                <p><strong>Xem các chung cư cao cấp đang sử dụng Dịch vụ thiết kế nội thất của nhadephanoi.vn</strong></p>
+                            <div class="col-xs-12">
+                                <div class="title">
+                                    <p><strong>Xem các chung cư cao cấp đang sử dụng Dịch vụ thiết kế nội thất của nhadephanoi.vn</strong></p>
+                                </div>
                             </div>
                             <div class="col-md-4">
                             <?php $args = array(

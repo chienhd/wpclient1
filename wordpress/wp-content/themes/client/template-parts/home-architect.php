@@ -20,7 +20,7 @@
                     <div data-index="<?php echo $i; ?>" class="kts-left-item kts-left-item<?php echo $i; ?> <?php if($i == 1) { echo 'kts-left-item-show'; } ?>">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 kts-1-img"> <img class="img-responsive" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_post_thumbnail_url(); ?>"></div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 kts-1-info">
-                            <span class="kts-1-name"><?php echo get_the_title(); ?></span> <span class="kts-1-position"><?php echo get_the_excerpt(); ?></span>
+                            <span class="kts-1-name"><?php echo get_the_title(); ?></span> <span class="kts-1-position"><?php //echo get_the_excerpt(); ?></span>
                             <div id="kts-1-des">
                                 <?php echo get_the_content(); ?>
                             </div>

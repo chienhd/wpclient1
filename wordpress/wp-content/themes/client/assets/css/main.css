@@ -44,7 +44,7 @@ body {
 
 .custom-logo-link {
     width: 130px;
-    height: auto;
+    height: 57px;
     display: block;
     padding: 0;
     margin-left: 0 !important;
@@ -170,7 +170,7 @@ ul {
         padding: 10px 10px;
     }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
     #masthead {
         position: static;
     }
@@ -467,7 +467,7 @@ ul {
 }
 @media(max-width: 991.98px) {
     .page-body-content {
-        margin-top: 76px !important;
+        margin-top: 0 !important;
     }
     .home-info-title {
         margin-top: 50px;
@@ -1343,7 +1343,7 @@ img {
     height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .support-item {
         border-radius: 0;
         padding: 5px;
@@ -1363,6 +1363,10 @@ img {
         z-index: 9999;
         width: 100%;
         bottom: 0;
+    }
+    .support-item, .support-item:hover {
+        margin-left: 0 !important;
+        transition-duration: initial !important;
     }
 
     .support-item:nth-child(2) {
@@ -1384,7 +1388,7 @@ img {
     text-transform: uppercase;
     font-size: 24px;
     padding-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 40px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -1730,7 +1734,7 @@ img {
 /*
 breadcrumbs*/
 #breadcrumb-wrap {
-    margin-top: 90px;
+    margin-top: 50px;
 }
 #breadcrumb-wrap .current {
     text-transform: uppercase;
@@ -1866,6 +1870,9 @@ main#introduce h1 {
     #introduce #gt2 .col-content{width:calc(100% - 470px);}
 }
 @media(max-width: 991.98px) {
+    #breadcrumb-wrap {
+        margin-top: 5px;
+    }
     #introduce .number {
         position: relative;
         font-size: 120px;
