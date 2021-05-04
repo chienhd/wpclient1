@@ -148,17 +148,17 @@ function custom_post_type() {
 
 // Set UI labels for Custom Post Type
     $labels = array(
-        'name'                => _x( 'Customers', 'Post Type General Name', 'client' ),
-        'singular_name'       => _x( 'Customers', 'Post Type Singular Name', 'client' ),
-        'menu_name'           => __( 'Customers', 'client' ),
+        'name'                => _x( 'Khách hàng', 'Post Type General Name', 'client' ),
+        'singular_name'       => _x( 'Bài viết', 'Post Type Singular Name', 'client' ),
+        'menu_name'           => __( 'Khách hàng', 'client' ),
         'parent_item_colon'   => __( 'Parent Customers', 'client' ),
-        'all_items'           => __( 'All Customers', 'client' ),
-        'view_item'           => __( 'View Customer', 'client' ),
-        'add_new_item'        => __( 'Add New Customer', 'client' ),
-        'add_new'             => __( 'Add New', 'client' ),
-        'edit_item'           => __( 'Edit Customer', 'client' ),
-        'update_item'         => __( 'Update Architect', 'client' ),
-        'search_items'        => __( 'Search Architect', 'client' ),
+        'all_items'           => __( 'Tất cả Khách hàng', 'client' ),
+        'view_item'           => __( 'Xem', 'client' ),
+        'add_new_item'        => __( 'Thêm mới', 'client' ),
+        'add_new'             => __( 'Thêm mới', 'client' ),
+        'edit_item'           => __( 'Chỉnh sửa', 'client' ),
+        'update_item'         => __( 'Cập nhật Khách hàng', 'client' ),
+        'search_items'        => __( 'Tìm kiếm Khách hàng', 'client' ),
         'not_found'           => __( 'Not Found', 'client' ),
         'not_found_in_trash'  => __( 'Not found in Trash', 'client' ),
     );
@@ -167,7 +167,7 @@ function custom_post_type() {
 
     $args = array(
         'label'               => __( 'architect', 'client' ),
-        'description'         => __( 'Đội ngũ kiến trúc sư', 'client' ),
+        'description'         => __( 'Đánh giá của khách hàng', 'client' ),
         'labels'              => $labels,
         // Features this CPT supports in Post Editor
         'supports'            => array( 'title', 'excerpt', 'editor', 'author', 'thumbnail', 'revisions', 'custom-fields', ),

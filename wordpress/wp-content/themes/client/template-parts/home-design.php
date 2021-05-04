@@ -55,7 +55,7 @@
                                         <a href="<?php echo esc_url(get_permalink()) ?>">
                                             <div class="project-content-item_top">
                                                 <div class="image">
-                                                    <img src="<?php echo get_the_post_thumbnail_url(); ?>"
+                                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'post-thumbnails'); ?>"
                                                          alt="<?php echo get_the_title(); ?>">
                                                 </div>
                                                 <div class="info">

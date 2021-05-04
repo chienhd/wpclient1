@@ -46,7 +46,11 @@ if ( ! function_exists( 'client_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-		add_image_size( 'post-thumbnails', 530, 252, array( 'center', 'center' ) );
+		add_image_size( 'post-thumbnails', 450, 214, array( 'center', 'center' ) );
+		// set_post_thumbnail_size('thumbnail', 80, 80, true);
+		// set_post_thumbnail_size('medium', 133, 110, true);
+		// set_post_thumbnail_size('medium_large', 300, 300, true);
+		
 
 
 		// This theme uses wp_nav_menu() in one location.

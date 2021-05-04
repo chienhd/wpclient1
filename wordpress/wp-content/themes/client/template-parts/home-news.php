@@ -37,7 +37,7 @@
                         <div class="row">
                             <div class="col-xs-4">
                                 <a href="<?php echo esc_url(get_permalink()) ?>" class="img-thumb">
-                                    <img width="172" height="115" src="<?php echo get_the_post_thumbnail_url(); ?>" class="attachment-thumb-news-home size-thumb-news-home wp-post-image" alt="<?php echo get_the_title(); ?>"/>                 
+                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" class="attachment-thumb-news-home size-thumb-news-home wp-post-image" alt="<?php echo get_the_title(); ?>"/>                 
                                 </a>
                             </div>
                             <div class="col-xs-8">

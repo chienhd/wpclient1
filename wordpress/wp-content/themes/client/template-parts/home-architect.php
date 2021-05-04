@@ -18,8 +18,8 @@
                         $query->the_post();
                     ?>
                     <div data-index="<?php echo $i; ?>" class="kts-left-item kts-left-item<?php echo $i; ?> <?php if($i == 1) { echo 'kts-left-item-show'; } ?>">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 kts-1-img"> <img class="img-responsive" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_post_thumbnail_url(); ?>"></div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 kts-1-info">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 kts-1-img"> <img class="img-responsive-customer" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="<?php echo get_the_title(); ?>"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 kts-1-info">
                             <span class="kts-1-name"><?php echo get_the_title(); ?></span> <span class="kts-1-position"><?php //echo get_the_excerpt(); ?></span>
                             <div id="kts-1-des">
                                 <?php echo get_the_content(); ?>
@@ -68,8 +68,8 @@
                         <li data-index="<?php echo $i; ?>" class="kts-right-item kts-right-item<?php echo $i; ?>">
                             <a href="#">
                                 <img class="kts-right-item-img img-responsive"
-                                     src="<?php echo get_the_post_thumbnail_url(); ?>"
-                                     alt="<?php echo get_the_post_thumbnail_url(); ?>"> <span class="kts-right-item-name"><?php echo get_the_title(); ?></span>
+                                     src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>"
+                                     alt="<?php echo get_the_title(); ?>"> <span class="kts-right-item-name"><?php echo get_the_title(); ?></span>
                                 <span class="kts-right-item-des">
                            <?php echo get_the_content(); ?>
                         </span>

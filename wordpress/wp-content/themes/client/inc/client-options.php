@@ -10,7 +10,7 @@ if (class_exists('CSF')) {
     //
     // Create options
     CSF::createOptions($prefix, array(
-        'menu_title' => 'Theme Options',
+        'menu_title' => 'Tùy chọn chủ đề',
         'menu_slug' => 'my-framework',
     ));
     /*&======================Logo=============================*/
@@ -411,7 +411,7 @@ if (class_exists('CSF')) {
             array(
                 'id' => 'footer_tab_block_5',
                 'type' => 'gallery',
-                'title' => 'Gallery',
+                'title' => 'Ảnh bên dưới Footer',
                 'add_title' => 'Add Images',
                 'edit_title' => 'Edit Images',
                 'clear_title' => 'Remove Images',

@@ -16,7 +16,7 @@
         <div class="row row--mod">
             <div class="col-xs-12 col-sm-12 col-lg-8 col-md-8">
                 <div class="home-info-text_content">
-                    <p><?php echo prefix_get_option('opt-h1-desc'); ?></p>
+                    <?php echo prefix_get_option('opt-h1-desc'); ?>
                 </div>
             </div>
         </div>
