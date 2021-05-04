@@ -47,9 +47,6 @@ if ( ! function_exists( 'client_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 		add_image_size( 'post-thumbnails', 450, 214, array( 'center', 'center' ) );
-		// set_post_thumbnail_size('thumbnail', 80, 80, true);
-		// set_post_thumbnail_size('medium', 133, 110, true);
-		// set_post_thumbnail_size('medium_large', 300, 300, true);
 		
 
 
