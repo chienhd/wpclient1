@@ -16,7 +16,13 @@ get_header();
 ?>
 
 	<main id="contact" class="page-body-content">
-		<?php get_template_part('template-parts/home', 'banner'); ?>
+        <?php if(get_the_post_thumbnail_url()): ?>
+            <section id="slideshow">
+                <div class="single-banner-other-page">
+                    <img class="position-image-center" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_post_thumbnail_url(); ?>">
+                </div>
+            </section>
+        <?php endif; ?>
 		<?php
 		while ( have_posts() ) :
 			the_post();
