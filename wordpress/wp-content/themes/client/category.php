@@ -116,18 +116,16 @@ $cat_id = $cat->cat_ID;
                                     wp_reset_postdata();
                                     ?>
                                 </div>
+                                <div class="row">
+                                    <div class="col-xs-12 ">
+                                        <a class="home-project-view-more hvr-grow" href="<?php echo $value->slug; ?>">Xem thêm&gt;&gt;
+                                            "<?php echo $value->name ?>"</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     <?php endforeach; ?>
 
-                    <div class="container--mod">
-                        <div class="row">
-                            <div class="col-xs-12 ">
-                                <a class="home-project-view-more hvr-grow" href="<?php echo $value->slug; ?>">Xem thêm&gt;&gt;
-                                    "<?php echo $value->name ?>"</a>
-                            </div>
-                        </div>
-                    </div>
                         <?php $args = array(
                                 'post_type' => 'post',
                                 'posts_per_page' => 15,

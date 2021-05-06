@@ -465,6 +465,10 @@ ul {
 }
 
 @media (max-width: 1199.98px) {
+    .taxonomy-description {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .container--mod {
         padding-left: 20px;
         padding-right: 20px;
@@ -1445,6 +1449,9 @@ img {
 .taxonomy-description {
     margin-bottom: 24px;
     line-height: 1.5;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 1920px;
 }
 .category-title {
     border-bottom: none !important;
