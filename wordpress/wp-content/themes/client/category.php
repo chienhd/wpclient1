@@ -128,6 +128,7 @@ $cat_id = $cat->cat_ID;
                         </div>
                     <?php endforeach; ?>
 
+                        <div class="container--mod">
                         <?php $args = array(
                                 'post_type' => 'post',
                                 'posts_per_page' => 15,
@@ -138,7 +139,6 @@ $cat_id = $cat->cat_ID;
                             $host_product = new WP_Query( $args ); 
                             if($host_product->have_posts()):
                         ?>
-                        <div class="container--mod">
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="title">
@@ -163,6 +163,8 @@ $cat_id = $cat->cat_ID;
                                 </div>
                             </div>
                             <?php 
+                            endif;
+
                             $description = get_field('category_bottom_description',  $cat->taxonomy. '_' . $cat->term_id);
                             if(!empty($description)):
                             ?>
@@ -175,7 +177,6 @@ $cat_id = $cat->cat_ID;
                             </div>
                             <?php endif; ?>
                         </div>
-                    <?php endif; ?>
                 </div>
             </div>
             <?php
@@ -238,8 +239,6 @@ $cat_id = $cat->cat_ID;
                                     $i++;
                                 endwhile;
                                 my_get_the_category_navigation();
-                            else :
-                                get_template_part('template-parts/content', 'none');
                             endif;
                             ?>
                         </div>

@@ -537,6 +537,7 @@ ul {
 .project-content-item_bottom {
     margin-top: 10px;
     padding-left: 10px;
+    min-height: 60px;
 }
 
 .project-content-item_bottom .subtitle,
