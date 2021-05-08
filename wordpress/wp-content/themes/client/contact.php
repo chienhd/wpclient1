@@ -35,14 +35,16 @@ get_header();
         <section class="section-nd">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <h2>Công ty Cổ phần Kiến trúc Xây dựng Nhà Đẹp Hà Nội</h2>
-                        <p>Số 1 đường Thanh Bình, mộ lao, Hà Đông, Hà Nội</p>
-                        <p>Hotline : 0948439439</p>
-                        <p>Email : namttbxd@gmail.com</p>
-                        <p>Website : <a href="https://nhadephanoi.vn/">nhadephanoi.vn/</a></p>
+                    <div class="col-xs-12 col-sm-7">
+                        <h2>CÔNG TY CP KIẾN TRÚC XÂY DỰNG NHÀ ĐẸP HÀ NỘI.</h2>
+                        <p>Trụ sở chính: Số 215, đường Tô Hiệu, Hà Cầu, Hà Đông, Hà Nội.</p>
+                        <p>VPGD: Tòa Tháp Doanh Nhân, Số 01, đường Thanh Bình, Hà Đông, Hà Nội.</p>
+                        <p>Showroom 1: Quận Thanh Xuân, TP.Hà Nội (Có vị trí đỗ xe ô tô).</p>
+                        <p>Showroom 2: Khu TT hành chính mới. TP.Bắc Ninh (Có vị trí đỗ xe ô tô).</p>
+                        <p>Nhà máy sản xuất: Quy mô 1000m2 – KCN Cần Kiệm, Thạch Thất, Hà Nội.</p>
+                        <p>Hotline: 0983.668.746.</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-sm-5">
                      <img src="/wp-content/themes/client/assets/images/dai-dien-web-scaled-2-1.jpg">
                  </div>
              </div>

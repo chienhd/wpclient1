@@ -37,10 +37,12 @@ $cat_id = $cat->cat_ID;
                     $description = get_field('category_top_description',  $cat->taxonomy. '_' . $cat->term_id);
                     if(!empty($description)):
                     ?>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="taxonomy-description">
-                                <?php echo $description; ?>
+                    <div class="container container--mod">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="taxonomy-description">
+                                    <?php echo $description; ?>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -140,14 +142,15 @@ $cat_id = $cat->cat_ID;
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="title">
-                                    <p><strong>Xem các chung cư cao cấp đang sử dụng Dịch vụ thiết kế nội thất của nhadephanoi.vn</strong></p>
-                                </div>
+                                        <p><strong>Xem các chung cư cao cấp đang sử dụng Dịch vụ thiết kế nội thất của nhadephanoi.vn</strong></p>
+                                    </div>
                                 </div>
                                 <div class="col-md-4">
                                 <?php
+                                $i = 1;
                                 while ($host_product->have_posts()) :
                                     $host_product->the_post();
-                                    if($i % 5 == 0)
+                                    if($i % 5 == 0 && $i >= 5)
                                         echo '</div> <div class="col-md-4">';
                                     ?>
                                     <p>
@@ -259,7 +262,7 @@ $cat_id = $cat->cat_ID;
                             $i = 1;
                             while ($host_product->have_posts()) :
                                 $host_product->the_post();
-                                if($i % 5 == 0)
+                                if($i % 5 == 0 && $i >= 5)
                                     echo '</div> <div class="col-md-4">';
                                 ?>
                                 <p>

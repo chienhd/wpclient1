@@ -66,15 +66,15 @@
                         $query->the_post();
                         ?>
                         <li data-index="<?php echo $i; ?>" class="kts-right-item kts-right-item<?php echo $i; ?>">
-                            <a href="#">
+                            <div>
                                 <img class="kts-right-item-img img-responsive"
                                      src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>"
                                      alt="<?php echo get_the_title(); ?>"> <span class="kts-right-item-name"><?php echo get_the_title(); ?></span>
                                 <span class="kts-right-item-des">
-                           <?php echo get_the_content(); ?>
-                        </span>
-                            </a>
-                            <p><a href="#"> </a></p>
+                                   <?php echo get_the_content(); ?>
+                                </span>
+                            </div>
+                            <p></p>
                         </li>
                         <?php 
                         $i++;
