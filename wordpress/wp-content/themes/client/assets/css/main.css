@@ -254,7 +254,7 @@ ul {
 /*========================================Home========================================*/
 /*home banner*/
 .page-body-content {
-    margin-top: 45px !important;
+    margin-top: 77px !important;
 }
 
 #slideshow {
@@ -480,7 +480,7 @@ ul {
 }
 @media(max-width: 991.98px) {
     .page-body-content {
-        margin-top: 0 !important;
+       /* margin-top: 0 !important;*/
     }
     .home-info-title {
         margin-top: 50px;
@@ -498,7 +498,7 @@ ul {
 }
 @media(max-width: 767.98px) {
     .page-body-content {
-        margin-top: 0 !important;
+        /*margin-top: 0 !important;*/
     }
 }
 @media(max-width: 575.98px) {
