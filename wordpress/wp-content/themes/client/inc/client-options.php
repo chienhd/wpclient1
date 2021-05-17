@@ -216,7 +216,7 @@ if (class_exists('CSF')) {
         )
     ));
     /*end Contact form*/
-        /*Contact form*/
+        /*Home Tin Tức*/
      CSF::createSection($prefix, array(
         'id' => 'home-news', // Set a unique slug-like ID
         'title' => 'Home Tin Tức',
@@ -237,9 +237,14 @@ if (class_exists('CSF')) {
               ),
             ),
             array(
+                'id' => 'home-news-read-all',
+                'type' => 'text',
+                'title' => 'Xem tất cả video(link url)',
+            ),
+            array(
               'id'          => 'home-news-3',
               'type'        => 'select',
-              'title'       => 'Chọn bài posts',
+              'title'       => 'Chọn bài posts (3 bài)',
               'placeholder' => 'Select posts',
               'chosen'      => true,
               'multiple'    => true,
@@ -248,7 +253,7 @@ if (class_exists('CSF')) {
             ),
         )
     ));
-    /*end Contact form*/
+    /*end Home Tin Tức*/
     /**================Footer Options================*/
     // Create a top-tab
     CSF::createSection($prefix, array(

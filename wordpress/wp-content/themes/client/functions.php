@@ -216,3 +216,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  *
  */
 require_once get_theme_file_path() .'/inc/client-options.php';
+
+add_filter( 'pre_option_upload_url_path', 'upload_url' );
+
+function upload_url() {
+    return 'https://nhadephanoi.vn/wp-content/uploads';
+}

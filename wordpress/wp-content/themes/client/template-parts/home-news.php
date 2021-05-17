@@ -15,6 +15,9 @@
                                     <?php echo prefix_get_option('home-news-2'); ?>
                                 </div>
                             </div>
+                            <div class="read-more-all-video-wrap">
+                                <a href="<?php echo prefix_get_option('home-news-read-all') ?>" class="read-more-all-video">Xem tất cả video</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -57,3 +60,32 @@
         </div>
     </div>
 </section>
+
+<style type="text/css">
+    .read-more-all-video-wrap {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .read-more-all-video {
+        padding: 9px 12px;
+        position: relative;
+        display: block;
+        font-size: 15px;
+        color: #182633;
+        font-weight: 500;
+        background-color: transparent;
+        border: 1px solid #878786;
+        border-radius: 3px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none !important;
+        width: max-content;
+        margin-bottom: 30px;
+    }
+     .read-more-all-video:hover {
+        background-color: #efefef;
+        color: #182633 !important;
+     }
+</style>
