@@ -12,6 +12,7 @@
 
 <!-- Tabs -->
 <div class="home-wrap-project">
+
     <!-- Nav tabs -->
     <?php
     $group = prefix_get_option('home-project-group');
