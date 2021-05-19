@@ -277,9 +277,9 @@ if (class_exists('CSF')) {
                     'mode' => 'htmlmixed',
                 ),
                 'default' => '<div class="widget footer_widget_name">
-   <h4 class="footer_widget_title">CÔNG TY CỔ PHẦN KIẾN TRÚC<br>
+   <div class="footer_widget_title">CÔNG TY CỔ PHẦN KIẾN TRÚC<br>
       NỘI THẤT AHOME
-   </h4>
+   </div>
    <p>Office &amp; Showroom Nội thất: Số 35 – Phan Kế Bính – Ba Đình – Hà Nội</p>
    <p>Showroom Decor: Số 116 – Phan Kế Bính – Ba Đình – Hà Nội</p>
    <p>Thời gian mở cửa: 8h30 – 18h30 kể cả thứ 7 và Chủ nhật.</p>
@@ -306,7 +306,7 @@ if (class_exists('CSF')) {
                     'mode' => 'htmlmixed',
                 ),
                 'default' => '<div class="widget footer_widget_contact">
-   <h4 class="footer_widget_title">THÔNG TIN LIÊN HỆ</h4>
+   <div class="footer_widget_title">THÔNG TIN LIÊN HỆ</div>
    <div class="textwidget">
       <p>Hotline : 098 10 888 66</p>
       <p>Email : ahome8866@gmail.com</p>
@@ -353,7 +353,7 @@ if (class_exists('CSF')) {
                     'mode' => 'htmlmixed',
                 ),
                 'default' => '<div class="widget footer_widget_link">
-   <h4 class="footer_widget_title">Liên kết</h4>
+   <div class="footer_widget_title">Liên kết</div>
    <div class="textwidget">
       <ul>
          <li><a href="https://noithatahome.vn/thiet-ke-noi-that/">Thiết kế nội thất</a></li>
@@ -393,7 +393,7 @@ if (class_exists('CSF')) {
                     'mode' => 'htmlmixed',
                 ),
                 'default' => '<div class="widget footer_widget_support">
-   <h3 class="footer_widget_title">HỖ TRỢ KHÁCH HÀNG</h3>
+   <div class="footer_widget_title">HỖ TRỢ KHÁCH HÀNG</div>
    <div class="textwidget">
       <ul>
          <li><a href="https://noithatahome.vn/chinh-sach-bao-mat-thong-tin-cua-ahome/">Chính sách bảo mật thông tin</a></li>

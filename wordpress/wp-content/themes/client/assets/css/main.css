@@ -1222,6 +1222,8 @@ footer {
     color: #fff;
     line-height: 1.5;
     min-height: 49px;
+    margin: 10px 0;
+    font-weight: 500;
 }
 
 footer .widget p {
