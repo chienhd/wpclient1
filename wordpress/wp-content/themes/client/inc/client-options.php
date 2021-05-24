@@ -591,11 +591,11 @@ if (class_exists('CSF')) {
         ),
             array(
             'id' => 'page_introduce_block_5_image',
-            'type' => 'media',
+            'type' => 'gallery',
             'title' => 'Hình ảnh mô tả',
-            'library' => 'image',
-            'preview_size' => 'full',
-            'url' => false
+            'add_title' => 'Thêm ảnh',
+            'edit_title' => 'Sửa ảnh',
+            'clear_title' => 'Xóa ảnh',
         ),
 
        ),

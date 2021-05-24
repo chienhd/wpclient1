@@ -97,7 +97,21 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-7 col-content">
-                    <img src="<?php echo prefix_get_option('page_introduce_block_5_image')['thumbnail']; ?>">
+                    <?php
+                    $slider = prefix_get_option('page_introduce_block_5_image');
+                    if($slider) {
+                    $gallery_ids = explode( ',', $slider );
+                    ?>
+                    <div class="introducr-block-5-slider owl-carousel owl-theme">
+                        <?php
+                        foreach ($gallery_ids as $key => $gallery_id) {  
+                        ?>
+                        <div class="item">
+                            <img src="<?php echo wp_get_attachment_url( $gallery_id ) ?>">
+                        </div>
+                        <?php } ?>
+                    </div>
+                    <?php } ?>
                 </div>
                 <div class="col-xs-12 col-md-5 col-title">
                     <h2 class="title-section text-uppercase"><?php echo prefix_get_option('page_introduce_block_5_title'); ?></h2>
@@ -113,3 +127,63 @@ get_header();
 
 <?php
 get_footer();
+?>
+<style type="text/css">
+    .introducr-block-5-slider {
+        position: relative;
+    }
+    .introducr-block-5-slider .item {
+        height: 0;
+        position: relative;
+        padding-bottom: 65%;
+        overflow: hidden;
+    }
+    .introducr-block-5-slider .item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        right: 0;
+        bottom: 0;
+        display: block;
+    }
+    .introducr-block-5-slider .owl-prev, .introducr-block-5-slider .owl-next {
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        display: block;
+        border: 1px solid black;
+    }
+    .introducr-block-5-slider .owl-prev .fa:before,
+    .introducr-block-5-slider .owl-next .fa:before {
+        font-size: 25px;
+        color: #fff;
+    }
+    .introducr-block-5-slider .owl-nav button:hover {
+        background: transparent !important;
+        opacity: 0.7;
+    }
+   .introducr-block-5-slider .owl-prev {
+        left: 5px;
+    }
+    .introducr-block-5-slider .owl-next {
+        right: 5px;
+    }
+   .introducr-block-5-slider .owl-dots {
+        margin-top: 10px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+</style>

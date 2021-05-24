@@ -1221,7 +1221,8 @@ footer {
     font-size: 16px;
     color: #fff;
     line-height: 1.5;
-    min-height: 49px;
+    min-height: 52px;
+    margin-bottom: 5px;
 }
 
 footer .widget p {
@@ -1310,8 +1311,31 @@ footer .widget a {
     text-align: center;
 }
 
-
+.footer_top .col-footer:nth-child(1) {
+    width: 35%;
+}
+.footer_top .col-footer:nth-child(2) {
+    width: 22%;
+}
+.footer_top .col-footer:nth-child(3) {
+    width: 21%;
+}
+.footer_top .col-footer:nth-child(4) {
+    width: 22%;
+}
 @media (max-width: 991.98px) {
+.footer_top .col-footer:nth-child(1) {
+    width: 100%;
+}
+.footer_top .col-footer:nth-child(2) {
+    width: 100%;
+}
+.footer_top .col-footer:nth-child(3) {
+    width: 100%;
+}
+.footer_top .col-footer:nth-child(4) {
+    width: 100%;
+}
     .footer_widget_title {
         margin: 0px;
         padding: 10px 0;
@@ -1904,7 +1928,7 @@ main#introduce h1 {
 #introduce #gt1 .number:after{background-color:#fff;}
 #introduce #gt1 p:nth-last-of-type(1){margin-bottom:13px;}
 #introduce p{margin-bottom:25px;}
-#introduce .title-section, #introduce .title-section h2{margin-top:0; font-size: 26px;}
+#introduce .title-section, #introduce .title-section h2{margin-top:0; font-size: 26px; line-height: 1.3;}
 #introduce #gt1{padding-top:35px;}
 #introduce .number {
     position: absolute;

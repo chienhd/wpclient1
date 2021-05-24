@@ -36,13 +36,7 @@ get_header();
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-7">
-                        <h2>CÔNG TY CP KIẾN TRÚC XÂY DỰNG NHÀ ĐẸP HÀ NỘI.</h2>
-                        <p>Trụ sở chính: Số 215, đường Tô Hiệu, Hà Cầu, Hà Đông, Hà Nội.</p>
-                        <p>VPGD: Tòa Tháp Doanh Nhân, Số 01, đường Thanh Bình, Hà Đông, Hà Nội.</p>
-                        <p>Showroom 1: Quận Thanh Xuân, TP.Hà Nội (Có vị trí đỗ xe ô tô).</p>
-                        <p>Showroom 2: Khu TT hành chính mới. TP.Bắc Ninh (Có vị trí đỗ xe ô tô).</p>
-                        <p>Nhà máy sản xuất: Quy mô 1000m2 – KCN Cần Kiệm, Thạch Thất, Hà Nội.</p>
-                        <p>Hotline: 0983.668.746.</p>
+                        <?php echo get_the_content(); ?>
                     </div>
                     <div class="col-xs-12 col-sm-5">
                      <img src="/wp-content/themes/client/assets/images/dai-dien-web-scaled-2-1.jpg">
