@@ -135,7 +135,7 @@ get_footer();
     .introducr-block-5-slider .item {
         height: 0;
         position: relative;
-        padding-bottom: 65%;
+        padding-bottom: 56.25%;
         overflow: hidden;
     }
     .introducr-block-5-slider .item img {

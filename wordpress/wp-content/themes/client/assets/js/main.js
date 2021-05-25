@@ -68,7 +68,9 @@ $('.tp-banner').revolution({
 });
 
 $(".footer_widget_title").click(function () {
-    $(this).next().slideToggle('active');
+    if($(window).width() <= 767.98) {
+        $(this).next().slideToggle('active');
+    }
 });
 $(".menu-item-has-children").click(function () {
     let submenu = $(this).children('.sub-menu').hasClass('sub-menu-active')
