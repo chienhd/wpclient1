@@ -1120,7 +1120,7 @@ ul {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
 
@@ -1131,7 +1131,7 @@ ul {
 #home-news .thumb-small a.img-thumb img {
     display: block;
     width: 100%;
-    height: 130px;
+    height: 110px;
     z-index: 1;
     object-fit: cover;
 }
